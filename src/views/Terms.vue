@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20 pb-24 overflow-hidden">
+  <div class="pt-32 pb-24 overflow-hidden">
     <!-- Hero Section -->
     <section class="relative py-20 bg-surface/30 border-b border-border">
       <div class="absolute inset-0 bg-hero-gradient opacity-30"></div>

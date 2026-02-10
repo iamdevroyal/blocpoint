@@ -1,5 +1,5 @@
 <template>
-  <section class="relative pt-12 pb-24 overflow-hidden" id="home">
+  <section class="relative pt-32 pb-24 overflow-hidden" id="home">
     <div class="absolute inset-0 bg-hero-gradient"></div>
     <ConfettiLayer />
     

@@ -1,7 +1,8 @@
 <template>
-  <div class="sticky top-6 z-40 transition-all duration-300">
+  <div class="fixed top-6 left-0 right-0 z-40 transition-all duration-300 pointer-events-none">
     <Container>
       <div :class="[
+        'pointer-events-auto',
         'rounded-full px-6 transition-all duration-500 border border-border shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]',
         compressed ? 'py-3 bg-surface/80 backdrop-blur-3xl' : 'py-4 bg-surface backdrop-blur-2xl'
       ]">

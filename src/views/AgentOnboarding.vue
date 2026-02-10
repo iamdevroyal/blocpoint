@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <!-- 1) Top Ribbon / Pre-header -->
-    <div class="mt-8 bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-3 relative z-20 animate-fade-in-down">
+    <div class="mt-32 bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-3 relative z-20 animate-fade-in-down">
       <Container>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-xs sm:text-sm text-center">
            <div class="flex items-center gap-2">
