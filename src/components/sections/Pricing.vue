@@ -27,7 +27,7 @@
           </template>
           <template #description>
              <ul class="space-y-4 mt-4">
-               <li v-for="(b, idx) in p.bullets" :key="b" class="flex items-start gap-3 group/item">
+               <li v-for="b in p.bullets" :key="b" class="flex items-start gap-3 group/item">
                  <CheckCircleIcon :class="['w-5 h-5 flex-shrink-0 transition-colors duration-300', i === 2 ? 'text-primary group-hover/item:text-indigo-300' : 'text-text-muted group-hover/item:text-text']" />
                  <span :class="['transition-colors duration-300', i === 2 ? 'text-text' : 'text-text-muted group-hover/item:text-text']">{{ b }}</span>
                </li>

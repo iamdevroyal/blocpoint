@@ -380,7 +380,6 @@ import {
   HelpCircleIcon,
   CheckCircleIcon,
   XCircleIcon,
-  AlertTriangleIcon,
   MailIcon,
   GavelIcon,
   BookOpenIcon,

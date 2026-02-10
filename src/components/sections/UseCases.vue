@@ -18,7 +18,7 @@
           :style="{ animationDelay: `${i * 0.2}s` }"
         >
           <template #icon>
-            <IconBox :icon="getIcon(i)" variant="purple" />
+            <IconBox :icon="getIcon(i) as Component" />
           </template>
           <template #title>{{ u.title }}</template>
           <template #description>{{ u.desc }}</template>
@@ -34,6 +34,7 @@ import Container from '../ui/Container.vue'
 import BentoCard from '../ui/BentoCard.vue'
 import IconBox from '../ui/IconBox.vue'
 import { StoreIcon, MapPinIcon, TrendingUpIcon } from 'lucide-vue-next'
+import { type Component } from 'vue'
 
 const getIcon = (i: number) => [StoreIcon, MapPinIcon, TrendingUpIcon][i]
 </script>

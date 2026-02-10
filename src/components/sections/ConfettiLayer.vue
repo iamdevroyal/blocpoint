@@ -79,6 +79,7 @@ const spawn = (n = 1) => {
   
   for (let i = 0; i < n; i++) {
     const size = Math.random() * 16 + 14 // 14px to 30px
+    const selectedColor = colors[Math.floor(Math.random() * colors.length)] || '#a78bfa'
     items.value.push({
       id: Date.now() + Math.random(),
       x: Math.random() * w,
@@ -86,7 +87,7 @@ const spawn = (n = 1) => {
       rot: Math.random() * 360,
       rotSpeed: (Math.random() - 0.5) * 2,
       icon: iconTypes.value[Math.floor(Math.random() * iconTypes.value.length)],
-      color: colors[Math.floor(Math.random() * colors.length)],
+      color: selectedColor,
       scale: Math.random() * 0.5 + 0.5,
       size,
       drift: Math.random() * Math.PI * 2,
@@ -97,8 +98,6 @@ const spawn = (n = 1) => {
 
 const update = () => {
   const h = window.innerHeight
-  const w = window.innerWidth
-  
   // Update existing items
   items.value.forEach(i => {
     i.y += 0.5 + (i.scale * 0.5) // Speed based on scale (parallax-ish)
@@ -126,6 +125,7 @@ onMounted(() => {
   // Spawn initial set scattered across the screen
   for (let i = 0; i < 20; i++) {
     const size = Math.random() * 16 + 14
+    const selectedColor = colors[Math.floor(Math.random() * colors.length)] || '#a78bfa'
     items.value.push({
       id: Date.now() + i,
       x: Math.random() * w,
@@ -133,7 +133,7 @@ onMounted(() => {
       rot: Math.random() * 360,
       rotSpeed: (Math.random() - 0.5) * 2,
       icon: iconTypes.value[Math.floor(Math.random() * iconTypes.value.length)],
-      color: colors[Math.floor(Math.random() * colors.length)],
+      color: selectedColor,
       scale: Math.random() * 0.5 + 0.5,
       size,
       drift: Math.random() * Math.PI * 2,

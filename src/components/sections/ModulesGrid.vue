@@ -20,7 +20,7 @@
           :style="{ animationDelay: `${i * -0.5}s`, animationDuration: `${4 + (i % 3)}s` }"
         >
           <template #icon>
-            <IconBox :icon="getIcon(i)" :variant="i % 3 === 0 ? 'accent' : 'purple'" />
+            <IconBox :icon="getIcon(i) as Component" />
           </template>
           <template #title>{{ m.title }}</template>
           <template #description>{{ m.desc }}</template>
@@ -35,6 +35,7 @@ import { site as content } from '../../content/siteContent'
 import Container from '../ui/Container.vue'
 import BentoCard from '../ui/BentoCard.vue'
 import IconBox from '../ui/IconBox.vue'
+import { type Component } from 'vue'
 import { 
   CreditCardIcon, 
   ArrowLeftRightIcon, 

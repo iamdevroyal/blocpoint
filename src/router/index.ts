@@ -16,7 +16,7 @@ export const router = createRouter({
     { path: '/terms', name: 'terms', component: Terms, meta: { title: 'Terms of Service — BlocPoint', description: 'Eligibility, acceptable use, fees, compliance obligations, and liability.' } },
     { path: '/agent-onboarding', name: 'agent-onboarding', component: AgentOnboarding, meta: { title: 'Become a Founding Agent — BlocPoint', description: 'Join the Founding Agent program for T+0 settlement and tier boosts.' } }
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, _, savedPosition) {
     return new Promise((resolve) => {
       // Small delay to ensure component render before scrolling
       setTimeout(() => {

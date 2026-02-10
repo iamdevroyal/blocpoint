@@ -134,6 +134,8 @@ let timer: number
 const typeLoop = () => {
   const currentPhrase = phrases[currentPhraseIndex.value]
   
+  if (!currentPhrase) return
+
   if (isDeleting.value) {
     currentText.value = currentPhrase.substring(0, currentText.value.length - 1)
   } else {
