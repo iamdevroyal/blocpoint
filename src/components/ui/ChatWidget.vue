@@ -70,13 +70,20 @@
 
         <!-- Quick Questions (Chips) -->
         <div class="p-4 border-t border-border bg-surface/50">
-          <div class="flex gap-2 overflow-x-auto pb-2 mb-2 no-scrollbar snap-x snap-mandatory">
+          <div 
+            ref="questionsContainer"
+            class="flex gap-2 overflow-x-auto pb-2 mb-2 no-scrollbar"
+            @mouseenter="isPaused = true"
+            @mouseleave="isPaused = false"
+            @touchstart="isPaused = true"
+            @touchend="isPaused = false"
+          >
             <button 
-              v-for="q in questions" 
-              :key="q.id"
+              v-for="(q, idx) in displayQuestions" 
+              :key="`${q.id}-${idx}`"
               @click="askQuestion(q)"
               :disabled="isTyping || isGenerating"
-              class="snap-start flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full bg-surface border border-primary/20 hover:border-primary/50 text-xs text-text-muted hover:text-primary transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full bg-surface border border-primary/20 hover:border-primary/50 text-xs text-text-muted hover:text-primary transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {{ q.text }}
             </button>
@@ -118,7 +125,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, nextTick, watch } from 'vue'
+import { ref, nextTick, watch, onMounted, onBeforeUnmount, computed } from 'vue'
 import { XIcon, SendIcon } from 'lucide-vue-next'
 import { site } from '../../content/siteContent'
 
@@ -127,6 +134,9 @@ const isTyping = ref(false)
 const isGenerating = ref(false)
 const inputValue = ref('')
 const chatContainer = ref<HTMLElement | null>(null)
+const questionsContainer = ref<HTMLElement | null>(null)
+const isPaused = ref(false)
+let animationId: number
 
 interface Message {
   id: number
@@ -141,6 +151,32 @@ const questions = site.faq.map((f, i) => ({
   text: f.q,
   answer: f.a
 }))
+
+// Duplicate questions for seamless scrolling loop
+const displayQuestions = computed(() => [...questions, ...questions])
+
+const startAutoScroll = () => {
+  const scroll = () => {
+    if (questionsContainer.value && !isPaused.value) {
+      questionsContainer.value.scrollLeft += 0.5
+      
+      // Reset scroll position for seamless loop
+      if (questionsContainer.value.scrollLeft >= (questionsContainer.value.scrollWidth / 2)) {
+        questionsContainer.value.scrollLeft -= (questionsContainer.value.scrollWidth / 2)
+      }
+    }
+    animationId = requestAnimationFrame(scroll)
+  }
+  animationId = requestAnimationFrame(scroll)
+}
+
+onMounted(() => {
+  startAutoScroll()
+})
+
+onBeforeUnmount(() => {
+  cancelAnimationFrame(animationId)
+})
 
 const scrollToBottom = async () => {
   await nextTick()
