@@ -12,6 +12,8 @@
     <VideoModal :open="openDemo" @close="openDemo=false" />
     
     <Toast :open="toastOpen" :message="toastMessage" />
+    <ChatWidget />
+    <ScrollToTop />
   </div>
 </template>
 <script lang="ts" setup>
@@ -23,6 +25,8 @@ import Modal from '../ui/Modal.vue'
 import VideoModal from '../ui/VideoModal.vue'
 import Toast from '../ui/Toast.vue'
 import JoinForm from '../shared/JoinForm.vue'
+import ChatWidget from '../ui/ChatWidget.vue'
+import ScrollToTop from '../ui/ScrollToTop.vue'
 
 const router = useRouter()
 const openJoin = ref(false)
