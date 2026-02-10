@@ -1,4 +1,4 @@
-# BlocPoint Landing — Vue 3 + Vite + Tailwind
+# Blocpoint Landing — Vue 3 + Vite + Tailwind
 
 ## Setup
 - Ensure Node 18+ is installed

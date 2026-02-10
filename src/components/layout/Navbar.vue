@@ -15,7 +15,7 @@
               class="h-8 w-auto transition-opacity duration-300"
               @error="logoError = true"
             />
-            <span v-else class="text-text-heading">BlocPoint</span>
+            <span v-else class="text-text-heading">Blocpoint</span>
           </RouterLink>
           <div class="hidden md:flex items-center gap-4 text-sm text-text-muted">
             <a href="/#home" :class="linkClass('home')">Home</a>

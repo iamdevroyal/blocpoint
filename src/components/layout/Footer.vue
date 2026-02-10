@@ -19,7 +19,7 @@
              </div>
           </RouterLink>
           <p class="text-sm text-text-muted max-w-sm leading-relaxed">
-            Agent-first financial infrastructure. Empowering the next generation of African fintech with instant settlements, tiered compliance, and secure digital assets.
+            Agent-first financial infrastructure. Empowering the next generation of African payment agents payment rails for instant settlements, tiered compliance, and secure digital assets.
           </p>
           <div class="flex gap-4">
             <!-- Social Icons Placeholder -->
