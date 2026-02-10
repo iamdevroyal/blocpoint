@@ -3,7 +3,7 @@
     <button 
       v-if="show"
       @click="scrollToTop"
-      class="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-primary/90 text-white shadow-lg shadow-primary/20 hover:bg-primary hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm border border-white/10"
+      class="fixed bottom-24 right-6 z-40 p-3 rounded-full bg-primary/90 text-white shadow-lg shadow-primary/20 hover:bg-primary hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm border border-white/10"
       aria-label="Scroll to top"
     >
       <ArrowUpIcon class="w-5 h-5" />

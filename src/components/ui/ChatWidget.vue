@@ -1,8 +1,11 @@
 <template>
-  <div class="fixed bottom-6 right-20 z-50 flex flex-col items-end">
+  <div>
     <!-- Chat Window -->
     <transition name="slide-up">
-      <div v-if="isOpen" class="w-[350px] h-[500px] mb-4 bg-surface border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-xl">
+      <div 
+        v-if="isOpen" 
+        class="fixed bottom-24 right-4 left-4 sm:left-auto sm:right-6 z-50 w-auto sm:w-[350px] h-[500px] bg-surface border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden backdrop-blur-xl"
+      >
         <!-- Header -->
         <div class="p-4 border-b border-border bg-primary/10 flex items-center justify-between">
           <div class="flex items-center gap-3">
@@ -67,13 +70,13 @@
 
         <!-- Quick Questions (Chips) -->
         <div class="p-4 border-t border-border bg-surface/50">
-          <div class="flex gap-2 overflow-x-auto pb-2 mb-2 no-scrollbar">
+          <div class="flex gap-2 overflow-x-auto pb-2 mb-2 no-scrollbar snap-x snap-mandatory">
             <button 
               v-for="q in questions" 
               :key="q.id"
               @click="askQuestion(q)"
               :disabled="isTyping || isGenerating"
-              class="whitespace-nowrap px-3 py-1.5 rounded-full bg-surface border border-primary/20 hover:border-primary/50 text-xs text-text-muted hover:text-primary transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="snap-start flex-shrink-0 whitespace-nowrap px-3 py-1.5 rounded-full bg-surface border border-primary/20 hover:border-primary/50 text-xs text-text-muted hover:text-primary transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {{ q.text }}
             </button>
@@ -104,7 +107,7 @@
     <button 
       v-if="!isOpen"
       @click="isOpen = true"
-      class="group flex items-center gap-3 pr-6 pl-2 py-2 rounded-full bg-surface border border-primary/30 shadow-lg shadow-indigo-500/20 hover:border-primary hover:bg-surface/80 backdrop-blur-md transition-all duration-300"
+      class="fixed bottom-6 right-6 z-50 group flex items-center gap-3 pr-6 pl-2 py-2 rounded-full bg-surface border border-primary/30 shadow-lg shadow-indigo-500/20 hover:border-primary hover:bg-surface/80 backdrop-blur-md transition-all duration-300"
     >
       <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 group-hover:scale-110 transition-transform duration-300">
         <img src="/blocpoint-fav.png" alt="Blocci" class="w-6 h-6" />
@@ -117,6 +120,7 @@
 <script lang="ts" setup>
 import { ref, nextTick, watch } from 'vue'
 import { XIcon, SendIcon } from 'lucide-vue-next'
+import { site } from '../../content/siteContent'
 
 const isOpen = ref(false)
 const isTyping = ref(false)
@@ -132,12 +136,11 @@ interface Message {
 
 const messages = ref<Message[]>([])
 
-const questions = [
-  { id: 1, text: "What is BlocPoint?", answer: "BlocPoint is an agent-first financial liquidity hub designed to bridge the gap between cash and digital payments in emerging markets. We provide T+0 settlement, tiered KYC, and bank-grade security." },
-  { id: 2, text: "How do I join?", answer: "Joining is simple! Click the 'Become an Agent' button in the navbar, fill out the application form with your basic details, and our team will review your application within 24 hours." },
-  { id: 3, text: "What are the fees?", answer: "We operate on a transparent fee structure. You pay a small service fee per successful transaction, plus standard network fees. There are no hidden monthly charges or setup fees." },
-  { id: 4, text: "Is my money safe?", answer: "Absolutely. We use AES-256 encryption, multi-factor authentication, and blockchain ledger anchoring to ensure your funds and data are secure. We also perform continuous device integrity checks." }
-]
+const questions = site.faq.map((f, i) => ({
+  id: i,
+  text: f.q,
+  answer: f.a
+}))
 
 const scrollToBottom = async () => {
   await nextTick()
