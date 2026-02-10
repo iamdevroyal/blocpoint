@@ -23,7 +23,7 @@ export function useTheme() {
     try {
       const saved = localStorage.getItem('blocpoint:theme') as 'dark'|'light'|null
       if (saved) theme.value = saved
-      else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) theme.value = 'light'
+      // Default is 'dark', so we don't need to check system preference for light
     } catch {}
     apply()
   })
