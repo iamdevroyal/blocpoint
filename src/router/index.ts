@@ -4,17 +4,19 @@ import About from '../views/About.vue'
 import Compliance from '../views/Compliance.vue'
 import Privacy from '../views/Privacy.vue'
 import Terms from '../views/Terms.vue'
-import AgentOnboarding from '../views/AgentOnboarding.vue'
+import GetStarted from '../views/GetStarted.vue'
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'home', component: Home, meta: { title: 'BlocPoint — Financial Liquidity Hub', description: 'Agent-first infrastructure with T+0 settlement, tiered access, compliance-forward.' } },
+    { path: '/', name: 'home', component: Home, meta: { title: 'BlocPoint — Your Complete Fintech Platform', description: 'Instant transfers, digital products, stablecoins, and more. Optional agent mode for SoftPOS and commissions.' } },
     { path: '/about', name: 'about', component: About, meta: { title: 'About — BlocPoint', description: 'Mission, values, and roadmap of BlocPoint.' } },
     { path: '/compliance', name: 'compliance', component: Compliance, meta: { title: 'Compliance — BlocPoint', description: 'Tiered KYC, monitoring, AML controls, and audit integrity.' } },
     { path: '/privacy', name: 'privacy', component: Privacy, meta: { title: 'Privacy Policy — BlocPoint', description: 'Data collection, usage, retention, and rights.' } },
     { path: '/terms', name: 'terms', component: Terms, meta: { title: 'Terms of Service — BlocPoint', description: 'Eligibility, acceptable use, fees, compliance obligations, and liability.' } },
-    { path: '/agent-onboarding', name: 'agent-onboarding', component: AgentOnboarding, meta: { title: 'Become a Founding Agent — BlocPoint', description: 'Join the Founding Agent program for T+0 settlement and tier boosts.' } }
+    { path: '/get-started', name: 'get-started', component: GetStarted, meta: { title: 'Get Started — BlocPoint', description: 'Join BlocPoint for instant transfers, digital products, and more. Activate agent mode for SoftPOS and commissions.' } },
+    // Legacy redirect
+    { path: '/agent-onboarding', redirect: '/get-started' }
   ],
   scrollBehavior(to, _, savedPosition) {
     return new Promise((resolve) => {

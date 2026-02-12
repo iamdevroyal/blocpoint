@@ -61,7 +61,7 @@ const router = useRouter()
 const getIcon = (i: number) => [UserIcon, ShieldIcon, CrownIcon][i]
 
 const goToOnboarding = () => {
-  router.push('/agent-onboarding')
+  router.push('/get-started')
 }
 </script>
 

@@ -25,7 +25,7 @@
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
             <Button variant="primary" class="shadow-xl shadow-indigo-500/20" @click="goToOnboarding">
-              Become an Agent
+              Get Started
               <template #icon>
                 <ArrowRightIcon class="w-4 h-4" />
               </template>
@@ -116,9 +116,9 @@ import {
 
 const router = useRouter()
 const phrases = [
-  "Powering Next-Gen Agents",
-  "Powering Modern Financial Agents",
-  "Powering the Future of Digital Agents"
+  "Powering Africa's Digital Economy",
+  "Built for Everyone",
+  "Instant. Secure. Accessible."
 ]
 
 const currentText = ref("")
@@ -159,7 +159,7 @@ const typeLoop = () => {
 }
 
 const goToOnboarding = () => {
-  router.push('/agent-onboarding')
+  router.push('/get-started')
 }
 
 onMounted(() => {

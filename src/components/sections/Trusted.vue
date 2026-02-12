@@ -2,7 +2,7 @@
   <section class="py-12 overflow-hidden relative">
     <Container>
       <div class="text-center mb-10">
-        <div class="text-sm text-neutral-300 font-medium tracking-wider uppercase">Trusted by agents & partners</div>
+        <div class="text-sm text-neutral-300 font-medium tracking-wider uppercase">Trusted by users & partners</div>
       </div>
       
       <!-- Infinite Carousel -->

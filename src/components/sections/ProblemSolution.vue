@@ -4,9 +4,9 @@
       <!-- Problem Section -->
       <FeatureRow>
         <template #badge>The Problem</template>
-        <template #title>Agents are micro-banks. But tools haven't kept up.</template>
+        <template #title>Nigeria's fintech users deserve better tools.</template>
         <template #description>
-          Hardware costs, settlement delays, and thin margins are choking agent growth. 
+          High fees, slow settlements, and limited access are holding people back. 
           The current infrastructure is fragmented and unreliable.
           <ul class="mt-8 space-y-4">
              <li v-for="p in content.problem.pains" :key="p" class="flex items-start gap-3">
@@ -41,10 +41,10 @@
       <!-- Solution Section -->
       <FeatureRow reverse class="mt-24">
         <template #badge>The Solution</template>
-        <template #title>A Complete Operating System for Agents</template>
+        <template #title>A Complete Fintech Platform for Everyone</template>
         <template #description>
           BlocPoint replaces fragmented tools with a single, powerful app.
-          From T+0 settlement to new revenue streams like gift cards and stablecoins.
+          From instant transfers to stablecoins, remittance, and optional agent features.
           <ul class="mt-8 space-y-4">
              <li v-for="s in content.solution" :key="s" class="flex items-start gap-3">
                <div class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center">

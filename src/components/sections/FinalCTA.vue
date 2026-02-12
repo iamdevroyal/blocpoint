@@ -16,7 +16,7 @@
            </p>
            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
              <Button variant="glow" class="px-12 py-4 text-lg" @click="openJoin=true">
-               Become an Agent
+               Get Started
                <template #icon><ArrowRightIcon class="w-5 h-5" /></template>
              </Button>
              <Button variant="secondary" class="px-12 py-4 text-lg" @click="openVideo=true">
@@ -27,7 +27,7 @@
       </div>
     </Container>
     <VideoModal :open="openVideo" @close="openVideo=false" />
-    <Modal :open="openJoin" title="Join Founding Agents" @close="openJoin=false">
+    <Modal :open="openJoin" title="Get Started with BlocPoint" @close="openJoin=false">
       <JoinForm @submitted="openJoin=false" @close="openJoin=false" />
     </Modal>
   </section>
