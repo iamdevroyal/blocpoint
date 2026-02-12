@@ -9,12 +9,12 @@ import GetStarted from '../views/GetStarted.vue'
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'home', component: Home, meta: { title: 'BlocPoint | Africa\'s #1 AI and Blockchain powered stablecoin and digital assets integrated SoftPos payment rails for financial agents and customers', description: 'Instant transfers, digital products, stablecoins, and more. Optional agent mode for SoftPOS and commissions.' } },
-    { path: '/about', name: 'about', component: About, meta: { title: 'About — BlocPoint', description: 'Mission, values, and roadmap of BlocPoint.' } },
-    { path: '/compliance', name: 'compliance', component: Compliance, meta: { title: 'Compliance — BlocPoint', description: 'Tiered KYC, monitoring, AML controls, and audit integrity.' } },
-    { path: '/privacy', name: 'privacy', component: Privacy, meta: { title: 'Privacy Policy — BlocPoint', description: 'Data collection, usage, retention, and rights.' } },
-    { path: '/terms', name: 'terms', component: Terms, meta: { title: 'Terms of Service — BlocPoint', description: 'Eligibility, acceptable use, fees, compliance obligations, and liability.' } },
-    { path: '/get-started', name: 'get-started', component: GetStarted, meta: { title: 'Get Started — BlocPoint', description: 'Join BlocPoint for instant transfers, digital products, and more. Activate agent mode for SoftPOS and commissions.' } },
+    { path: '/', name: 'home', component: Home, meta: { title: 'Blocpoint | Africa\'s #1 AI and Blockchain powered stablecoin and digital assets integrated SoftPos payment rails for financial agents and customers', description: 'Instant transfers, digital products, stablecoins, and more. Optional agent mode for SoftPOS and commissions.' } },
+    { path: '/about', name: 'about', component: About, meta: { title: 'About — Blocpoint', description: 'Mission, values, and roadmap of Blocpoint.' } },
+    { path: '/compliance', name: 'compliance', component: Compliance, meta: { title: 'Compliance — Blocpoint', description: 'Tiered KYC, monitoring, AML controls, and audit integrity.' } },
+    { path: '/privacy', name: 'privacy', component: Privacy, meta: { title: 'Privacy Policy — Blocpoint', description: 'Data collection, usage, retention, and rights.' } },
+    { path: '/terms', name: 'terms', component: Terms, meta: { title: 'Terms of Service — Blocpoint', description: 'Eligibility, acceptable use, fees, compliance obligations, and liability.' } },
+    { path: '/get-started', name: 'get-started', component: GetStarted, meta: { title: 'Get Started — Blocpoint', description: 'Join Blocpoint for instant transfers, digital products, and more. Activate agent mode for SoftPOS and commissions.' } },
     // Legacy redirect
     { path: '/agent-onboarding', redirect: '/get-started' }
   ],
