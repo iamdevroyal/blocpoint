@@ -1,7 +1,7 @@
 export const site = {
   brand: {
     name: 'BlocPoint',
-    taglineMain: 'Your Complete Fintech Platform.',
+    taglineMain: 'Africa\'s #1 AI and Blockchain powered stablecoin and digital assets integrated SoftPos payment rails for financial agents and customers',
     taglineSupport: 'Built for everyone. Designed for trust. Engineered for instant settlement.'
   },
   hero: {

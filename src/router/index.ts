@@ -9,7 +9,7 @@ import GetStarted from '../views/GetStarted.vue'
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'home', component: Home, meta: { title: 'BlocPoint — Your Complete Fintech Platform', description: 'Instant transfers, digital products, stablecoins, and more. Optional agent mode for SoftPOS and commissions.' } },
+    { path: '/', name: 'home', component: Home, meta: { title: 'BlocPoint | Africa\'s #1 AI and Blockchain powered stablecoin and digital assets integrated SoftPos payment rails for financial agents and customers', description: 'Instant transfers, digital products, stablecoins, and more. Optional agent mode for SoftPOS and commissions.' } },
     { path: '/about', name: 'about', component: About, meta: { title: 'About — BlocPoint', description: 'Mission, values, and roadmap of BlocPoint.' } },
     { path: '/compliance', name: 'compliance', component: Compliance, meta: { title: 'Compliance — BlocPoint', description: 'Tiered KYC, monitoring, AML controls, and audit integrity.' } },
     { path: '/privacy', name: 'privacy', component: Privacy, meta: { title: 'Privacy Policy — BlocPoint', description: 'Data collection, usage, retention, and rights.' } },
