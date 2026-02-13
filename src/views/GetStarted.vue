@@ -128,19 +128,10 @@ import Button from '../components/ui/Button.vue'
 import confetti from 'canvas-confetti'
 import { useScrollReveal } from '../composables/useScrollReveal'
 import { 
-  CheckCircleIcon, 
-  ChevronDownIcon, 
   Loader2Icon,
-  Wallet,
-  Send,
-  Gift,
-  TrendingUp,
-  Shield,
-  Zap
 } from 'lucide-vue-next'
 
 const loading = ref(false)
-const openFaq = ref<number | null>(null)
 
 // Initialize scroll animations
 useScrollReveal('.reveal')
@@ -169,13 +160,6 @@ const submitForm = async () => {
   alert('Account Created! Check your email for verification steps.')
 }
 
-const scrollToForm = () => {
-  document.getElementById('signup-form')?.scrollIntoView({ behavior: 'smooth' })
-}
-
-const toggleFaq = (i: number) => {
-  openFaq.value = openFaq.value === i ? null : i
-}
 
 </script>
 
