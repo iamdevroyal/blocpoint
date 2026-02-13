@@ -8,10 +8,10 @@
         
         <div class="relative z-10 max-w-3xl mx-auto space-y-8">
            <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
-             Ready to Start Selling Smarter?
+             Ready to Upgrade Your Payment Journey?
            </h2>
            <p class="text-xl text-white/80 leading-relaxed">
-             Join the network of modern agents redefining financial services across Nigeria.
+             Join the network of modern users and agents redefining financial services across Nigeria.
              Start with fiat rails and unlock digital assets as you grow.
            </p>
            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">

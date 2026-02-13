@@ -13,7 +13,7 @@
             Terms of Service
           </h1>
           <p class="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
-            These terms govern your use of the BlocPoint platform. By accessing or using our services, you agree to be bound by these terms.
+            These terms govern your use of the Blocpoint platform. By accessing or using our services, you agree to be bound by these terms.
           </p>
         </div>
       </Container>
@@ -57,7 +57,7 @@
                 <ul class="space-y-4 list-none pl-0">
                   <li class="p-4 rounded-xl bg-surface border border-border">
                     <strong class="text-text-heading block mb-1">"Platform"</strong>
-                    Refers to the BlocPoint mobile application, website, API, and all related services provided by BlocPoint Technologies.
+                    Refers to the Blocpoint mobile application, website, API, and all related services provided by Blocpoint Technologies.
                   </li>
                   <li class="p-4 rounded-xl bg-surface border border-border">
                     <strong class="text-text-heading block mb-1">"Agent"</strong>
@@ -69,7 +69,7 @@
                   </li>
                   <li class="p-4 rounded-xl bg-surface border border-border">
                     <strong class="text-text-heading block mb-1">"Float"</strong>
-                    Refers to the pre-funded balance maintained by an Agent in their BlocPoint wallet to facilitate instant payouts.
+                    Refers to the pre-funded balance maintained by an Agent in their Blocpoint wallet to facilitate instant payouts.
                   </li>
                 </ul>
               </div>
@@ -84,7 +84,7 @@
                 <h2 class="text-2xl font-bold text-text-heading">2. Eligibility</h2>
               </div>
               <div class="prose prose-invert max-w-none text-text-muted">
-                <p>To access and use BlocPoint's services, you must satisfy the following criteria at all times:</p>
+                <p>To access and use Blocpoint's services, you must satisfy the following criteria at all times:</p>
                 <div class="mt-4 space-y-4">
                    <div class="flex gap-4 p-4 rounded-xl bg-surface border border-border">
                      <CheckCircleIcon class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -129,11 +129,11 @@
                 </li>
                 <li class="flex items-start gap-3">
                   <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2"></div>
-                  <span class="text-sm text-text-muted">You must immediately notify BlocPoint of any unauthorized use of your password or account or any other breach of security.</span>
+                  <span class="text-sm text-text-muted">You must immediately notify Blocpoint of any unauthorized use of your password or account or any other breach of security.</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2"></div>
-                  <span class="text-sm text-text-muted">BlocPoint will not be liable for any loss or damage arising from your failure to comply with this section.</span>
+                  <span class="text-sm text-text-muted">Blocpoint will not be liable for any loss or damage arising from your failure to comply with this section.</span>
                 </li>
               </ul>
             </div>
@@ -147,7 +147,7 @@
                 <h2 class="text-2xl font-bold text-text-heading">4. Acceptable Use Policy</h2>
               </div>
               <p class="text-text-muted leading-relaxed">
-                You agree to use BlocPoint services solely for lawful purposes. You are strictly prohibited from using our platform for:
+                You agree to use Blocpoint services solely for lawful purposes. You are strictly prohibited from using our platform for:
               </p>
               <div class="grid md:grid-cols-2 gap-4">
                  <div class="p-4 rounded-xl bg-surface border border-border hover:border-red-500/50 transition-colors group">
@@ -165,7 +165,7 @@
                        Fraud & Abuse
                     </h4>
                     <p class="text-sm text-text-muted group-hover:text-text transition-colors">
-                       Engaging in money laundering, terrorist financing, or attempting to defraud BlocPoint or other users.
+                       Engaging in money laundering, terrorist financing, or attempting to defraud Blocpoint or other users.
                     </p>
                  </div>
                  <div class="p-4 rounded-xl bg-surface border border-border hover:border-red-500/50 transition-colors group">
@@ -183,7 +183,7 @@
                        IP Violation
                     </h4>
                     <p class="text-sm text-text-muted group-hover:text-text transition-colors">
-                       Reverse engineering the software or infringing upon BlocPoint's intellectual property rights.
+                       Reverse engineering the software or infringing upon Blocpoint's intellectual property rights.
                     </p>
                  </div>
               </div>
@@ -199,7 +199,7 @@
               </div>
               <div class="prose prose-invert max-w-none text-text-muted">
                 <p>
-                  BlocPoint operates on a transparent fee structure. By using the service, you authorize us to deduct the following applicable fees from your transaction amount:
+                  Blocpoint operates on a transparent fee structure. By using the service, you authorize us to deduct the following applicable fees from your transaction amount:
                 </p>
                 <div class="my-6 border border-border rounded-2xl overflow-hidden">
                    <div class="grid grid-cols-3 bg-surface/50 p-4 border-b border-border font-semibold text-text-heading text-sm">
@@ -224,7 +224,7 @@
                    </div>
                 </div>
                 <p class="text-sm">
-                  * All fees are clearly displayed on the confirmation screen before you authorize any transaction. BlocPoint reserves the right to update fee schedules with 30 days notice.
+                  * All fees are clearly displayed on the confirmation screen before you authorize any transaction. Blocpoint reserves the right to update fee schedules with 30 days notice.
                 </p>
               </div>
             </div>
@@ -238,7 +238,7 @@
                 <h2 class="text-2xl font-bold text-text-heading">6. Compliance Obligations</h2>
               </div>
               <p class="text-text-muted leading-relaxed">
-                 You acknowledge that BlocPoint is subject to strict financial regulations. To maintain access to your account, you agree to:
+                 You acknowledge that Blocpoint is subject to strict financial regulations. To maintain access to your account, you agree to:
               </p>
               <ul class="space-y-4">
                  <li class="flex gap-4">
@@ -256,7 +256,7 @@
               </ul>
               <div class="p-4 rounded-xl bg-purple-500/5 border border-purple-500/20 mt-4">
                 <p class="text-sm text-purple-400 font-medium">
-                  BlocPoint reserves the right to freeze funds or terminate accounts that fail to meet compliance requirements or trigger AML/CFT alerts.
+                  Blocpoint reserves the right to freeze funds or terminate accounts that fail to meet compliance requirements or trigger AML/CFT alerts.
                 </p>
               </div>
             </div>
@@ -298,12 +298,12 @@
               </div>
               <div class="prose prose-invert max-w-none text-text-muted">
                 <p>
-                  BlocPoint provides the platform "as is" and "as available". To the maximum extent permitted by law:
+                  Blocpoint provides the platform "as is" and "as available". To the maximum extent permitted by law:
                 </p>
                 <ul class="list-disc pl-5 space-y-2 mt-2">
                    <li>We make no warranties regarding uptime, accuracy of third-party data, or uninterrupted service.</li>
                    <li>We are not liable for losses due to blockchain network congestion, gas price spikes, or smart contract failures outside our direct control.</li>
-                   <li>Our total liability for any claim arising out of these terms shall not exceed the total fees paid by you to BlocPoint in the 12 months preceding the claim.</li>
+                   <li>Our total liability for any claim arising out of these terms shall not exceed the total fees paid by you to Blocpoint in the 12 months preceding the claim.</li>
                 </ul>
               </div>
             </div>
@@ -330,7 +330,7 @@
                 <h2 class="text-2xl font-bold text-text-heading">10. Dispute Resolution</h2>
               </div>
               <p class="text-text-muted leading-relaxed">
-                 Any dispute arising from these Terms shall be resolved through binding arbitration in the jurisdiction of BlocPoint's incorporation. You waive your right to participate in class action lawsuits against BlocPoint.
+                 Any dispute arising from these Terms shall be resolved through binding arbitration in the jurisdiction of Blocpoint's incorporation. You waive your right to participate in class action lawsuits against Blocpoint.
               </p>
             </div>
 

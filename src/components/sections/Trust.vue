@@ -6,7 +6,7 @@
           Built for Trust
         </div>
         <h2 class="text-3xl md:text-6xl font-bold mb-4 text-text-heading">Infrastructure You Can Bet On</h2>
-        <p class="text-text-muted text-lg">Our ledger architecture ensures every kobo is accounted for, instantly.</p>
+        <p class="text-text-muted text-lg">Our ledger architecture ensures every transaction is accounted for, instantly.</p>
       </div>
 
       <!-- Carousel Container -->

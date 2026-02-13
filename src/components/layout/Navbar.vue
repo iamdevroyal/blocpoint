@@ -3,15 +3,15 @@
     <Container>
       <div :class="[
         'pointer-events-auto',
-        'rounded-full px-6 transition-all duration-500 border border-border shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]',
-        compressed ? 'py-3 bg-surface/80 backdrop-blur-3xl' : 'py-4 bg-surface backdrop-blur-2xl'
+        'rounded-full px-3 transition-all duration-500 border border-border shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]',
+        compressed ? 'py-3 bg-surface/80 backdrop-blur-3xl' : 'py-3 bg-surface backdrop-blur-2xl'
       ]">
         <div class="flex items-center gap-4">
           <RouterLink to="/" class="flex items-center gap-2 font-bold tracking-wide text-lg">
             <img 
               v-if="!logoError" 
               :src="theme === 'dark' ? '/blocpoint-white.png' : '/blocpoint.png'" 
-              alt="BlocPoint" 
+              alt="Blocpoint" 
               class="h-8 w-auto transition-opacity duration-300"
               @error="logoError = true"
             />

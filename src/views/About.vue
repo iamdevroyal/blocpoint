@@ -37,7 +37,7 @@
                 but they operate with outdated tools and thin margins.
               </p>
               <p class="text-text font-medium border-l-4 border-primary pl-4">
-                BlocPoint changes the equation. We give agents the technology of a neobank, 
+                Blocpoint changes the equation. We give agents the technology of a neobank, 
                 the liquidity of a market maker, and the security of a vault.
               </p>
             </div>

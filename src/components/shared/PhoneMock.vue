@@ -14,6 +14,8 @@
           <div class="rounded-xl bg-surface border border-border p-3 text-xs text-text">Tap-to-Pay</div>
           <div class="rounded-xl bg-surface border border-border p-3 text-xs text-text">Cash-out</div>
           <div class="rounded-xl bg-surface border border-border p-3 text-xs text-text">Gift Cards</div>
+          <div class="rounded-xl bg-surface border border-border p-3 text-xs text-text">Stablecoin</div>
+          <div class="rounded-xl bg-surface border border-border p-3 text-xs text-text">Subscriptions</div>
         </div>
         <div class="space-y-2">
           <div class="text-xs font-semibold text-text">Recent</div>
@@ -23,6 +25,13 @@
           <div class="rounded-xl bg-surface border border-border p-3 text-xs flex justify-between text-text">
             <span>Transfer — P2P</span><span>₦12,000</span>
           </div>
+          <div class="rounded-xl bg-surface border border-border p-3 text-xs flex justify-between text-text">
+            <span>Apple</span><span>₦145,000</span>
+          </div>
+          <div class="rounded-xl bg-surface border border-border p-3 text-xs flex justify-between text-text">
+            <span>Airtime</span><span>₦2,000</span>
+          </div>
+          
         </div>
       </div>
     </div>

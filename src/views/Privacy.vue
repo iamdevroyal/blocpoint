@@ -68,7 +68,7 @@
                   </div>
                   <div class="p-4 rounded-xl bg-surface border border-border">
                     <h4 class="font-semibold text-text-heading mb-2">Transaction Logs</h4>
-                    <p class="text-sm">Details of payments, transfers, and settlements processed through the BlocPoint platform.</p>
+                    <p class="text-sm">Details of payments, transfers, and settlements processed through the Blocpoint platform.</p>
                   </div>
                 </div>
               </div>

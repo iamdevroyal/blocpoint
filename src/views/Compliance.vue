@@ -97,7 +97,7 @@
               <div>
                 <h3 class="text-xl font-bold text-text-heading mb-2">Device Integrity</h3>
                 <p class="text-text-muted">
-                  The BlocPoint app performs continuous health checks on the agent's device. Rooted or compromised devices are automatically blocked from the network.
+                  The Blocpoint app performs continuous health checks on the agent's device. Rooted or compromised devices are automatically blocked from the network.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@
             </h4>
             <p class="text-sm text-text-muted leading-relaxed">
               The information provided on this page is for informational purposes only and does not constitute legal or financial advice. 
-              BlocPoint operates in strict accordance with local regulations in each jurisdiction. Features and limits may vary by region.
+              Blocpoint operates in strict accordance with local regulations in each jurisdiction. Features and limits may vary by region.
             </p>
           </div>
 

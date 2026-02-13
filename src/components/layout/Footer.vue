@@ -19,7 +19,7 @@
              </div>
           </RouterLink>
           <p class="text-sm text-text-muted max-w-sm leading-relaxed">
-            Agent-first financial infrastructure. Empowering the next generation of African POS agents with AI & Blocchain powered payment rails for instant settlements, tiered compliance, and secure digital assets.
+            User-first financial infrastructure. Empowering the next generation of African Spenders and POS agents with AI & Blockhain powered payment rails for instant settlements, tiered compliance, and secure digital assets.
           </p>
           <div class="flex gap-4">
             <!-- Social Icons Placeholder -->
@@ -52,7 +52,7 @@
       
       <div class="py-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted">
         <div>
-          © {{ year }} BlocPoint Financial Technologies. All rights reserved.
+          © {{ year }} Blocpoint Technologies. All rights reserved.
         </div>
         <div class="flex items-center gap-2">
           <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>

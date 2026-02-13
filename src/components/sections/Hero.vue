@@ -1,18 +1,18 @@
 <template>
-  <section class="relative pt-32 pb-24 overflow-hidden" id="home">
+  <section class="relative pt-32 pb-12 overflow-hidden" id="home">
     <div class="absolute inset-0 bg-hero-gradient"></div>
     <ConfettiLayer />
     
-    <Container class="relative z-10 max-w-10xl">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
+    <Container class="relative z-10 max-w-12xl">
+      <div class="grid lg:grid-cols-2 gap-6 items-center">
         <!-- Text Content -->
-        <div class="space-y-8 text-center lg:text-left max-w-4xl">
+        <div class="space-y-6 text-center lg:text-left max-w-6xl">
           <div class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
             <span class="flex h-2 w-2 rounded-full bg-green-500"></span>
             <span class="typing-text">{{ currentText }}</span>
           </div>
           
-          <h1 class="max-w-4xl mx-auto text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-text">
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-text">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-text via-text to-primary">
               {{ content.hero.headline }}
             </span>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Visual Content -->
-        <div class="relative flex justify-center lg:justify-end perspective-1000 mt-12 lg:mt-0 transform-style-3d">
+        <div class="relative flex justify-center max-w-4xl lg:justify-end perspective-1000 mt-12 lg:mt-0 transform-style-3d">
           <div class="relative z-10 transform scale-90 sm:scale-100 transition-transform duration-700 hover:rotate-y-6 hover:rotate-x-6 group transform-style-3d">
             <PhoneMock class="transform-style-3d animate-sway" />
             
