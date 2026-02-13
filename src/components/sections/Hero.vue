@@ -12,9 +12,20 @@
             <span class="typing-text">{{ currentText }}</span>
           </div>
           
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-text">
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-text via-text to-primary">
-              {{ content.hero.headline }}
+              Empowering Africa's digital economy — for 
+            </span>
+            <span class="relative inline-block h-[1.2em] w-[200px] sm:w-[250px] align-bottom">
+              <span 
+                v-for="(text, index) in content.hero.rotatingTexts" 
+                :key="text"
+                class="absolute left-0 bottom-0 w-full font-extrabold transition-opacity duration-[1500ms] ease-in-out"
+                :class="{ 'opacity-85': currentRotatingIndex === index, 'opacity-0': currentRotatingIndex !== index }"
+                style="color: rgb(99, 102, 241);"
+              >
+                {{ text }}
+              </span>
             </span>
           </h1>
           
@@ -128,8 +139,10 @@ const typingSpeed = 100
 const deletingSpeed = 50
 const pauseBetween = 2000
 const openVideo = ref(false)
+const currentRotatingIndex = ref(0)
 
 let timer: number
+let rotatingTimer: number
 
 const typeLoop = () => {
   const currentPhrase = phrases[currentPhraseIndex.value]
@@ -162,12 +175,18 @@ const goToOnboarding = () => {
   router.push('/get-started')
 }
 
+const rotateText = () => {
+  currentRotatingIndex.value = (currentRotatingIndex.value + 1) % content.hero.rotatingTexts.length
+}
+
 onMounted(() => {
   typeLoop()
+  rotatingTimer = setInterval(rotateText, 3000) as unknown as number
 })
 
 onBeforeUnmount(() => {
   clearTimeout(timer)
+  clearInterval(rotatingTimer)
 })
 </script>
 

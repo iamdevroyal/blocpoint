@@ -5,7 +5,8 @@ export const site = {
     taglineSupport: 'Built for everyone. Designed for trust. Engineered for instant settlement.'
   },
   hero: {
-    headline: 'Empowering Africa\'s digital economy — for everyone.',
+    headline: 'Empowering Africa\'s digital economy — for',
+    rotatingTexts: ['spenders', 'senders', 'agents', 'everyone'],
     subheadline: [
       'Send money instantly, buy digital products, access stablecoins, and more.',
       'Want to serve customers? Activate agent mode for SoftPOS, cash-out, and commissions.'
@@ -34,30 +35,30 @@ export const site = {
   },
   trustedLogos: ['Partner A', 'Partner B', 'Rail C', 'Gateway D', 'Provider E'],
   trust: [
-    { title: 'Instant Settlement', desc: 'Wallet updates happen immediately upon transaction confirmation, keeping your cash flow moving.' },
-    { title: 'Fail-Safe Transactions', desc: 'Every operation is built to handle network drops safely—no double charges, ever.' },
-    { title: 'Bulletproof Accounting', desc: 'Our dual-ledger system ensures every kobo is accounted for with bank-grade precision.' },
-    { title: 'Real-Time Audit Logs', desc: 'Complete history of every event, reconciled instantly in the background for peace of mind.' },
-    { title: 'Fraud Protection', desc: 'AI-driven monitoring detects and blocks suspicious activity before it impacts you.' },
-    { title: '99.99% Uptime', desc: 'Built on redundant cloud infrastructure to ensure your business never stops.' }
+    { title: 'Instant Money Updates', desc: 'Your wallet balance updates immediately when you send or receive money. No waiting, no delays.' },
+    { title: 'Safe Transactions', desc: 'Every payment is protected against network issues—you will never be charged twice.' },
+    { title: 'Accurate Money Tracking', desc: 'We double-check every transaction to make sure your money is always accounted for.' },
+    { title: 'Complete Transaction History', desc: 'See every payment you have made or received, anytime you need it.' },
+    { title: 'Fraud Protection', desc: 'Smart monitoring detects and blocks suspicious activity to keep your money safe.' },
+    { title: 'Always Available', desc: 'Our platform is built to work 24/7, so you can send money whenever you need to.' }
   ],
   problem: {
     pains: [
       'High transfer fees eating into your money',
-      'Slow settlement times (T+1 or worse)',
+      'Waiting days for money to arrive',
       'Limited access to digital financial services',
-      'No easy way to buy gift cards or send remittances',
-      'Complex KYC processes that block access'
+      'No easy way to buy gift cards or send money abroad',
+      'Complicated verification that blocks access'
     ],
-    nigeria: 'Africa\'s fintech users deserve better tools. We\'re building them.'
+    nigeria: 'Everyone in Africa deserves easy access to modern financial tools. We\'re building them.'
   },
   solution: [
-    'Instant NIP transfers (T+0 wallet updates)',
-    'Digital inventory: gift cards, airtime, data',
-    'Cross-border remittance with low fees',
-    'Stablecoin access (Tier 3)',
-    'Micro-lending based on transaction history',
-    'Optional agent mode: SoftPOS, cash-out, commissions (Android)'
+    'Instant money transfers with immediate wallet updates',
+    'Buy gift cards, airtime, and data in seconds',
+    'Send money abroad with low fees',
+    'Access digital dollars for savings (Tier 3)',
+    'Get small loans based on your transaction history',
+    'Optional agent mode: Accept card payments, help customers, earn commissions'
   ],
   steps: [
     { title: 'Sign Up Instantly', desc: 'Create your account in less than 2 minutes. Choose regular user or agent mode.' },
@@ -68,23 +69,23 @@ export const site = {
   ],
   complianceNote: 'Stablecoin access is available only to approved Tier 3 users with enhanced due diligence and active monitoring.',
   modules: [
-    { title: 'SoftPOS Card Acceptance', desc: 'Tap-to-Pay on modern Android devices.' },
-    { title: 'Transfers & Cash-out', desc: 'Reliable rails for moving money.' },
-    { title: 'Instant Wallet & Ledger', desc: 'Internal T+0 ledger with clear balances.' },
-    { title: 'Commission Engine & Tier Boosts', desc: 'Earn more with transparent rules.' },
-    { title: 'Tiered KYC & Limits', desc: 'Access and caps increase with verification.' },
-    { title: 'Gift Card Inventory & Fulfillment', desc: 'Sell digital products with instant delivery.' },
-    { title: 'Stablecoin Liquidity (Tier 3)', desc: 'Controlled distribution with monitoring.' },
-    { title: 'Risk Monitoring & AML Triggers', desc: 'Velocity checks and anomaly detection.' },
-    { title: 'Reversals + Dispute Handling', desc: 'Clear workflows for exceptions.' },
-    { title: 'Audit Trails + Integrity Anchoring', desc: 'Batch hashes anchored on-chain, no PII.' }
+    { title: 'Accept Card Payments', desc: 'Turn your Android phone into a payment terminal (Agent mode).' },
+    { title: 'Send & Receive Money', desc: 'Transfer money to anyone, instantly and securely.' },
+    { title: 'Instant Wallet Updates', desc: 'See your balance update in real-time with every transaction.' },
+    { title: 'Earn Rewards', desc: 'Get commissions and bonuses when you help others (Agent mode).' },
+    { title: 'Simple Verification Levels', desc: 'Unlock higher limits as you verify your identity.' },
+    { title: 'Buy Digital Products', desc: 'Purchase gift cards, airtime, and data instantly.' },
+    { title: 'Digital Dollars (Tier 3)', desc: 'Access stablecoins for savings and international payments.' },
+    { title: 'Fraud Protection', desc: 'Smart security monitors your account for suspicious activity.' },
+    { title: 'Dispute Resolution', desc: 'Easy process to resolve payment issues if something goes wrong.' },
+    { title: 'Secure Transaction Records', desc: 'Your payment history is permanently recorded and protected.' }
   ],
   security: [
-    { title: 'Device integrity checks', desc: 'Play Integrity signals to reduce risk.' },
-    { title: 'Encryption + secure key handling', desc: 'Keys managed securely, data encrypted in transit and at rest.' },
-    { title: 'RBAC + audit trails', desc: 'Role-based permissions with full logs.' },
-    { title: 'Rate limiting + anomaly detection', desc: 'Adaptive limits for safety.' },
-    { title: 'No PII on-chain', desc: 'Only integrity hashes anchored for tamper evidence.' }
+    { title: 'Phone Security Checks', desc: 'We verify your phone is safe before allowing transactions.' },
+    { title: 'Data Encryption', desc: 'Your personal information and money are encrypted and protected.' },
+    { title: 'Secure Access Controls', desc: 'Only you can access your account with your password and verification.' },
+    { title: 'Fraud Detection', desc: 'Smart limits and monitoring protect you from suspicious activity.' },
+    { title: 'Your Privacy Protected', desc: 'Your personal information stays private and is never publicly shared.' }
   ],
   pricing: [
     { tier: 'Tier 1 — Basic', bullets: ['Phone verification', 'NIP transfers', 'Digital products', '₦50k daily limit'] },

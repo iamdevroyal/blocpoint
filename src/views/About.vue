@@ -10,12 +10,12 @@
             <span>Our Mission</span>
           </div>
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-text-heading leading-tight">
-            Building the Financial <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Nervous System</span> of Africa
+            Making Money Work for <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Everyone in Africa</span>
           </h1>
           <p class="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
-            We are empowering a new generation of agents to become trusted micro-banks. 
-            Bridging the gap between cash, digital payments, and the future of finance.
+            We're building a platform where anyone can send money, buy things, and manage their finances easily. 
+            Want to earn? Activate agent mode to serve customers and grow your business.
           </p>
         </div>
       </Container>
@@ -29,16 +29,16 @@
             <h2 class="text-3xl md:text-5xl font-bold text-text-heading">Why We Exist</h2>
             <div class="space-y-6 text-lg text-text-muted">
               <p>
-                Across emerging markets, cash is still king, but the digital economy is booming. 
-                The bridge between them is broken—plagued by slow settlements, high fees, and a lack of trust.
+                Across Africa, millions of people struggle with expensive money transfers, limited access to digital services, 
+                and complicated financial systems that leave them behind.
               </p>
               <p>
-                Traditional banks can't reach everyone. Mobile money agents are the lifeline, 
-                but they operate with outdated tools and thin margins.
+                Traditional banks don't serve everyone. Mobile money is expensive. 
+                Digital payments are confusing. We're changing that.
               </p>
               <p class="text-text font-medium border-l-4 border-primary pl-4">
-                Blocpoint changes the equation. We give agents the technology of a neobank, 
-                the liquidity of a market maker, and the security of a vault.
+                BlocPoint makes it simple. Send money instantly, buy what you need, and manage your finances—all in one app. 
+                Want to earn? Turn on agent mode and start serving customers.
               </p>
             </div>
           </div>
@@ -54,14 +54,14 @@
                 <div class="p-6 rounded-2xl bg-surface border border-border backdrop-blur-md">
                   <UsersIcon class="w-8 h-8 text-indigo-400 mb-4" />
                   <div class="font-bold text-text text-xl">50k+</div>
-                  <div class="text-sm text-text-muted">Target Agents</div>
+                  <div class="text-sm text-text-muted">Target Users</div>
                 </div>
               </div>
               <div class="space-y-4">
                 <div class="p-6 rounded-2xl bg-surface border border-border backdrop-blur-md">
                   <ZapIcon class="w-8 h-8 text-yellow-400 mb-4" />
-                  <div class="font-bold text-text text-xl">T+0</div>
-                  <div class="text-sm text-text-muted">Instant Liquidity</div>
+                  <div class="font-bold text-text text-xl">Instant</div>
+                  <div class="text-sm text-text-muted">Money Updates</div>
                 </div>
                 <div class="p-6 rounded-2xl bg-surface border border-border backdrop-blur-md">
                   <GlobeIcon class="w-8 h-8 text-cyan-400 mb-4" />
