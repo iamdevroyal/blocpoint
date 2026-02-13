@@ -10,11 +10,11 @@
             <span>Bank-Grade Compliance</span>
           </div>
           <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-text-heading leading-tight">
-            Built on Trust, <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Secured by Design</span>
+            Your Money, <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Safe and Secure</span>
           </h1>
           <p class="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
-            Our compliance framework is designed to protect our agents, their customers, and the integrity of the financial system without compromising speed.
+            We use bank-grade security to protect you, your money, and your personal information. fast, safe, and reliable.
           </p>
         </div>
       </Container>
@@ -26,23 +26,23 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <BentoCard class="md:col-span-2 lg:col-span-1">
             <template #icon><UserCheckIcon class="w-8 h-8 text-primary" /></template>
-            <template #title>Tiered KYC Model</template>
+            <template #title>Simple Verification</template>
             <template #description>
-              A progressive verification system that balances access with security. Agents can start small and unlock higher limits as they build trust.
+              Start using BlocPoint instantly. verify your identity to unlock higher limits and more features as you grow.
             </template>
             <template #footer>
               <div class="space-y-3">
                 <div class="flex items-center justify-between text-sm p-2 rounded-lg bg-surface border border-border">
-                  <span class="text-text-muted">Tier 1</span>
-                  <span class="text-text font-medium">Basic ID Check</span>
+                  <span class="text-text-muted">Level 1</span>
+                  <span class="text-text font-medium">Phone Number</span>
                 </div>
                 <div class="flex items-center justify-between text-sm p-2 rounded-lg bg-surface border border-border">
-                  <span class="text-text-muted">Tier 2</span>
-                  <span class="text-text font-medium">Biometric + Address</span>
+                  <span class="text-text-muted">Level 2</span>
+                  <span class="text-text font-medium">ID & Address</span>
                 </div>
                 <div class="flex items-center justify-between text-sm p-2 rounded-lg bg-surface border border-border">
-                  <span class="text-text-muted">Tier 3</span>
-                  <span class="text-text font-medium">Enhanced Due Diligence</span>
+                  <span class="text-text-muted">Level 3</span>
+                  <span class="text-text font-medium">Full Verification</span>
                 </div>
               </div>
             </template>
@@ -50,24 +50,24 @@
 
           <BentoCard>
             <template #icon><ActivityIcon class="w-8 h-8 text-yellow-400" /></template>
-            <template #title>Real-time Monitoring</template>
+            <template #title>24/7 Fraud Protection</template>
             <template #description>
-              Our AI-driven engine monitors transactions 24/7 for suspicious patterns, velocity spikes, and structuring attempts.
+              Our smart systems watch over your account around the clock to stop suspicious activity before it happens.
             </template>
             <template #footer>
               <div class="flex flex-wrap gap-2">
-                <span class="px-2 py-1 rounded bg-yellow-400/10 text-yellow-400 text-xs border border-yellow-400/20">Velocity Checks</span>
-                <span class="px-2 py-1 rounded bg-yellow-400/10 text-yellow-400 text-xs border border-yellow-400/20">Geo-fencing</span>
-                <span class="px-2 py-1 rounded bg-yellow-400/10 text-yellow-400 text-xs border border-yellow-400/20">Pattern Matching</span>
+                <span class="px-2 py-1 rounded bg-yellow-400/10 text-yellow-400 text-xs border border-yellow-400/20">Smart Limits</span>
+                <span class="px-2 py-1 rounded bg-yellow-400/10 text-yellow-400 text-xs border border-yellow-400/20">Location Lock</span>
+                <span class="px-2 py-1 rounded bg-yellow-400/10 text-yellow-400 text-xs border border-yellow-400/20">Fraud Detection</span>
               </div>
             </template>
           </BentoCard>
 
           <BentoCard>
             <template #icon><LockIcon class="w-8 h-8 text-purple-400" /></template>
-            <template #title>Data Sovereignty</template>
+            <template #title>Your Data is Private</template>
             <template #description>
-              All sensitive PII is encrypted at rest and in transit. We employ zero-knowledge proofs where possible to verify without revealing.
+              Your personal information is encrypted and never shared. We verify your identity without exposing your details.
             </template>
             <template #footer>
               <div class="flex items-center gap-2 text-sm text-text-muted">
@@ -95,9 +95,9 @@
                 <SmartphoneIcon class="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-text-heading mb-2">Device Integrity</h3>
+                <h3 class="text-xl font-bold text-text-heading mb-2">Secure App</h3>
                 <p class="text-text-muted">
-                  The Blocpoint app performs continuous health checks on the agent's device. Rooted or compromised devices are automatically blocked from the network.
+                  The BlocPoint app checks your phone for security risks to ensure no one else is tampering with your device.
                 </p>
               </div>
             </div>
@@ -107,9 +107,9 @@
                 <DatabaseIcon class="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-text-heading mb-2">Immutable Audit Trails</h3>
+                <h3 class="text-xl font-bold text-text-heading mb-2">Always Recorded</h3>
                 <p class="text-text-muted">
-                  Every critical action is logged. Transaction batches are hashed and anchored to a public ledger for tamper-proof auditability.
+                  Every transaction is permanently recorded. You'll always have a complete history of your money movements.
                 </p>
               </div>
             </div>
@@ -119,9 +119,9 @@
                 <BanIcon class="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 class="text-xl font-bold text-text-heading mb-2">Prohibited Flows</h3>
+                <h3 class="text-xl font-bold text-text-heading mb-2">Safe Transactions</h3>
                 <p class="text-text-muted">
-                  Strict enforcement against high-risk activities. We explicitly block card-funded stablecoin purchases and transfers to sanctioned entities.
+                  We automatically block unsafe transactions and restrict payments to known bad actors to keep you safe.
                 </p>
               </div>
             </div>
@@ -212,10 +212,10 @@ import {
 const openContact = ref(false)
 
 const layers = [
-  { name: 'App Integrity', icon: SmartphoneIcon, color: 'text-blue-400' },
-  { name: 'Transport Encryption', icon: LockIcon, color: 'text-purple-400' },
-  { name: 'Biometric Auth', icon: FingerprintIcon, color: 'text-pink-400' },
-  { name: 'Ledger Anchoring', icon: ServerIcon, color: 'text-cyan-400' },
-  { name: 'Sanctions Screening', icon: GlobeIcon, color: 'text-red-400' }
+  { name: 'App Security', icon: SmartphoneIcon, color: 'text-blue-400' },
+  { name: 'Secure Connection', icon: LockIcon, color: 'text-purple-400' },
+  { name: 'Identity Check', icon: FingerprintIcon, color: 'text-pink-400' },
+  { name: 'Permanent Records', icon: ServerIcon, color: 'text-cyan-400' },
+  { name: 'Fraud Screening', icon: GlobeIcon, color: 'text-red-400' }
 ]
 </script>

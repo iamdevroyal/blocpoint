@@ -57,19 +57,23 @@
                 <ul class="space-y-4 list-none pl-0">
                   <li class="p-4 rounded-xl bg-surface border border-border">
                     <strong class="text-text-heading block mb-1">"Platform"</strong>
-                    Refers to the Blocpoint mobile application, website, API, and all related services provided by Blocpoint Technologies.
+                    The BlocPoint app, website, and all services we provide.
+                  </li>
+                  <li class="p-4 rounded-xl bg-surface border border-border">
+                    <strong class="text-text-heading block mb-1">"User"</strong>
+                    Any person who registers and uses BlocPoint to send money, buy products, or manage funds.
                   </li>
                   <li class="p-4 rounded-xl bg-surface border border-border">
                     <strong class="text-text-heading block mb-1">"Agent"</strong>
-                    Refers to any verified user authorized to perform financial transactions on behalf of third-party customers using the Platform.
+                    A User who has activated "Agent Mode" to perform transactions on behalf of others for a commission.
                   </li>
                   <li class="p-4 rounded-xl bg-surface border border-border">
-                    <strong class="text-text-heading block mb-1">"Settlement"</strong>
-                    Refers to the final and irrevocable transfer of value between accounts, typically occurring on a T+0 basis unless otherwise specified.
+                    <strong class="text-text-heading block mb-1">"Transaction"</strong>
+                    Any money transfer, payment, or purchase made on the platform.
                   </li>
                   <li class="p-4 rounded-xl bg-surface border border-border">
-                    <strong class="text-text-heading block mb-1">"Float"</strong>
-                    Refers to the pre-funded balance maintained by an Agent in their Blocpoint wallet to facilitate instant payouts.
+                    <strong class="text-text-heading block mb-1">"Wallet Balance"</strong>
+                    The available money in your BlocPoint account.
                   </li>
                 </ul>
               </div>
@@ -96,9 +100,9 @@
                    <div class="flex gap-4 p-4 rounded-xl bg-surface border border-border">
                      <CheckCircleIcon class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                      <div>
-                       <h4 class="font-semibold text-text-heading">Identity Verification</h4>
-                       <p class="text-sm mt-1">You must complete our Know Your Customer (KYC) process, providing accurate and up-to-date personal information, including government-issued identification.</p>
-                     </div>
+                        <h4 class="font-semibold text-text-heading">Identity Verification</h4>
+                        <p class="text-sm mt-1">You must complete our identity verification process (KYC) by providing accurate personal information.</p>
+                      </div>
                    </div>
                    <div class="flex gap-4 p-4 rounded-xl bg-surface border border-border">
                      <CheckCircleIcon class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -220,7 +224,7 @@
                    <div class="grid grid-cols-3 p-4 text-sm">
                       <div class="font-medium text-text">Spread</div>
                       <div>Exchange rate margin</div>
-                      <div>Included in quoted rate</div>
+                      <div>Included in the rate you see</div>
                    </div>
                 </div>
                 <p class="text-sm">
@@ -256,7 +260,7 @@
               </ul>
               <div class="p-4 rounded-xl bg-purple-500/5 border border-purple-500/20 mt-4">
                 <p class="text-sm text-purple-400 font-medium">
-                  Blocpoint reserves the right to freeze funds or terminate accounts that fail to meet compliance requirements or trigger AML/CFT alerts.
+                  BlocPoint reserves the right to freeze funds or suspend accounts that violate these compliance rules or look suspicious.
                 </p>
               </div>
             </div>
