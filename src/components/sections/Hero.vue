@@ -10,7 +10,7 @@
           
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
             <span class=" bg-clip-text bg-gradient-to-r from-text via-text to-primary">
-              Empowering Africa's digital economy — for 
+              Empowering Africa's Remittance Economy — for 
             </span>
             <span class="relative inline-block h-[1.2em] w-[300px] sm:w-[400px] align-bottom">
               <span 

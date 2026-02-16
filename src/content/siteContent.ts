@@ -6,7 +6,7 @@ export const site = {
   },
   hero: {
     headline: 'Empowering Africa\'s digital economy — for',
-    rotatingTexts: ['freelancers', 'entrepreneurs', 'spenders', 'traders', 'everyone'],
+    rotatingTexts: ['Freelancers', 'Entrepreneurs', 'Spenders', 'Traders', 'Everyone'],
     subheadline: [
       'Convert, settle, and spend across borders - with built-in tax compliance and local wallet support.',
       'Powered by institutional-grade liquidity rails across Africa'
