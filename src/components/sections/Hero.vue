@@ -8,11 +8,11 @@
         <!-- Text Content -->
         <div class="space-y-6 text-center lg:text-left max-w-6xl">
           
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
             <span class=" bg-clip-text bg-gradient-to-r from-text via-text to-primary">
               Empowering Africa's digital economy — for 
             </span>
-            <span class="relative inline-block h-[1.2em] w-[400px] sm:w-[250px] align-bottom">
+            <span class="relative inline-block h-[1.2em] w-[300px] sm:w-[400px] align-bottom">
               <span 
                 v-for="(text, index) in content.hero.rotatingTexts" 
                 :key="text"
@@ -53,14 +53,14 @@
         </div>
 
         <!-- Visual Content -->
-        <div class="relative flex justify-center max-w-4xl lg:justify-end perspective-1000 mt-12 lg:mt-0 transform-style-3d">
-          <div class="relative z-10 transform scale-90 sm:scale-100 transition-transform duration-700 hover:rotate-y-6 hover:rotate-x-6 group transform-style-3d">
+        <div class="relative flex justify-center max-w-full lg:max-w-4xl lg:justify-end perspective-1000 mt-12 lg:mt-0 transform-style-3d">
+          <div class="relative z-10 transform scale-75 sm:scale-100 transition-transform duration-700 hover:rotate-y-6 hover:rotate-x-6 group transform-style-3d">
             <PhoneMock class="transform-style-3d animate-sway" />
             
             <!-- Orbit System -->
             <div class="absolute inset-0 pointer-events-none transform-style-3d">
               <!-- Orbit Ring 1 -->
-              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full border border-primary/20 animate-orbit-1 transform-style-3d">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] rounded-full border border-primary/20 animate-orbit-1 transform-style-3d">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface p-2 rounded-xl border border-primary/30 shadow-lg shadow-primary/20 animate-counter-rotate">
                   <BanknoteIcon class="w-5 h-5 text-green-400" />
                 </div>
@@ -70,7 +70,7 @@
               </div>
 
               <!-- Orbit Ring 2 -->
-              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-border animate-orbit-2 transform-style-3d">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[400px] sm:h-[400px] rounded-full border border-border animate-orbit-2 transform-style-3d">
                 <div class="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface p-2 rounded-xl border border-border shadow-lg animate-counter-rotate">
                   <DatabaseIcon class="w-5 h-5 text-purple-400" />
                 </div>
