@@ -6,12 +6,12 @@ export const site = {
   },
   hero: {
     headline: 'Empowering Africa\'s digital economy — for',
-    rotatingTexts: ['spenders', 'senders', 'agents', 'everyone'],
+    rotatingTexts: ['freelancers', 'entrepreneurs', 'spenders', 'traders', 'everyone'],
     subheadline: [
-      'Send money instantly, buy digital products, access stablecoins, and more.',
-      'Want to serve customers? Activate agent mode for SoftPOS, cash-out, and commissions.'
+      'Convert, settle, and spend across borders - with built-in tax compliance and local wallet support.',
+      'Powered by institutional-grade liquidity rails across Africa'
     ],
-    trustChips: ['T+0 Wallet Updates', 'Tiered KYC Controls', 'Instant Transfers', 'Audit Integrity', 'Security-Grade Architecture'],
+    trustChips: ['⚡ Instant Stablecoin Conversion', '🌍 Cross-Border Ready', '🧾 Built-In Tax Intelligence', '💳 Fiat Wallet Infrastructure', 'Security-Grade Architecture', '🚀 Agent & POS Expansion (Coming Soon)'],
     dashboard: {
       wallet: { currency: 'NGN', balance: '₦125,400', today: '₦15,200' },
       actions: ['Transfer', 'Buy Airtime', 'Gift Cards', 'Remittance'],
@@ -30,8 +30,8 @@ export const site = {
     { value: '24/7', label: 'Live Support' }
   ],
   ecosystem: {
-    left: ['SoftPOS Card Acceptance', 'Transfers & Cash-out', 'Gift Cards', 'Subscriptions'],
-    right: ['Tiered KYC & Limits', 'Commission Engine', 'Stablecoin Tier (3)', 'Monitoring & Alerts']
+    left: ['Stablecoin Conversion', 'Transfers & Cash-out', 'Gift Cards', 'Subscriptions'],
+    right: ['Fiat Wallet Management', 'Automated Tax Intelligence', 'Regulated liquidity partners', 'Real-time settlement']
   },
   trustedLogos: ['Partner A', 'Partner B', 'Rail C', 'Gateway D', 'Provider E'],
   trust: [
@@ -47,7 +47,6 @@ export const site = {
       'High transfer fees eating into your money',
       'Waiting days for money to arrive',
       'Limited access to digital financial services',
-      'No easy way to buy gift cards or send money abroad',
       'Complicated verification that blocks access'
     ],
     nigeria: 'Everyone in Africa deserves easy access to modern financial tools. We\'re building them.'
@@ -69,7 +68,7 @@ export const site = {
   ],
   complianceNote: 'Stablecoin access is available only to approved Tier 3 users with enhanced due diligence and active monitoring.',
   modules: [
-    { title: 'Accept Card Payments', desc: 'Turn your Android phone into a payment terminal (Agent mode).' },
+    { title: 'Stay Compliant Without the Stress', desc: 'Blocpoint automatically tracks income flows and prepares tax-ready summaries so you can manage obligations confidently.' },
     { title: 'Send & Receive Money', desc: 'Transfer money to anyone, instantly and securely.' },
     { title: 'Instant Wallet Updates', desc: 'See your balance update in real-time with every transaction.' },
     { title: 'Earn Rewards', desc: 'Get commissions and bonuses when you help others (Agent mode).' },
@@ -88,24 +87,24 @@ export const site = {
     { title: 'Your Privacy Protected', desc: 'Your personal information stays private and is never publicly shared.' }
   ],
   pricing: [
-    { tier: 'Tier 1 — Basic', bullets: ['Phone verification', 'NIP transfers', 'Digital products', '₦50k daily limit'] },
-    { tier: 'Tier 2 — Verified', bullets: ['BVN + ID verification', 'Higher limits (₦500k)', 'Remittance + loans', 'Agent features (optional)'] },
-    { tier: 'Tier 3 — Premium', bullets: ['Enhanced due diligence', 'Stablecoin access', 'Highest limits (₦2M)', 'Priority support'] }
+    { tier: 'Tier 1 — Basic', bullets: ['Phone verification', 'NIP transfers', 'Digital products', '₦500k daily limit'] },
+    { tier: 'Tier 2 — Verified', bullets: ['BVN + ID verification', 'Higher limits (₦2M)', 'Remittance + loans', 'Agent features (optional)'] },
+    { tier: 'Tier 3 — Premium', bullets: ['Enhanced due diligence', 'Stablecoin access', 'Highest limits (₦5M)', 'Priority support'] }
   ],
   pricingDisclaimer: 'Fees and commissions vary by transaction type, volume, risk profile, and partner rails. Final pricing is disclosed in-app.',
   useCases: [
     { title: 'The Digital Native', desc: 'Send money to friends instantly, buy gift cards for online shopping, and access stablecoins — all from one app.' },
-    { title: 'The Diaspora Sender', desc: 'Send cross-border remittances with low fees. Convert to stablecoins (Tier 3) for family back home.' },
+    { title: 'The Diaspora Sender', desc: 'Send cross-border remittances with low fees. Convert to stablecoins for family back home.' },
     { title: 'The Neighborhood Agent', desc: 'Activate agent mode to serve customers. Accept card payments via SoftPOS, offer cash-out, and earn commissions.' }
   ],
   faq: [
-    { q: 'What is BlocPoint and who is it for?', a: 'BlocPoint is a complete fintech platform for everyone in Africa. Regular users can send money, buy digital products, access stablecoins, and get micro-loans. If you want to serve customers, activate agent mode for SoftPOS card acceptance, cash-out services, and commissions.' },
-    { q: 'Do I need special hardware to use BlocPoint?', a: 'No! Regular users just need a smartphone. If you activate agent mode for SoftPOS card acceptance, you\'ll need an NFC-enabled Android device. No dedicated POS machine required.' },
-    { q: 'How does the instant T+0 settlement work?', a: 'Unlike traditional banks that settle next-day, BlocPoint uses an internal ledger system. When a transaction is confirmed, your wallet balance updates instantly. You can access your funds immediately for transfers or other transactions.' },
+    { q: 'What is Blocpoint and who is it for?', a: 'Blocpoint is a complete fintech platform for everyone in Africa. Regular users can send money, buy digital products, access stablecoins, and get micro-loans. If you want to serve customers, activate agent mode for SoftPOS card acceptance, cash-out services, and commissions.' },
+    { q: 'Do I need special hardware to use Blocpoint?', a: 'No! Regular users just need a smartphone. If you activate agent mode for SoftPOS card acceptance, you\'ll need an NFC-enabled Android device. No dedicated POS machine required.' },
+    { q: 'How does the instant settlement work?', a: 'Unlike traditional banks that settle next-day, Blocpoint uses an internal ledger system. When a transaction is confirmed, your wallet balance updates instantly. You can access your funds immediately for transfers or other transactions.' },
     { q: 'What are the requirements for Tier 2 and Tier 3?', a: 'Tier 1 requires phone verification only. Tier 2 requires BVN/NIN verification for higher limits and access to remittance and loans. Tier 3 requires enhanced due diligence (business registration for agents, proof of address) to unlock stablecoin features.' },
-    { q: 'Can I use BlocPoint without being an agent?', a: 'Absolutely! Most users are regular users who send transfers, buy airtime/gift cards, access remittance, and use micro-loans. Agent mode is completely optional and requires activation.' },
+    { q: 'Can I use Blocpoint without being an agent?', a: 'Absolutely! Most users are regular users who send transfers, buy airtime/gift cards, access remittance, and use micro-loans. Agent mode is completely optional and requires activation.' },
     { q: 'How do I become an agent?', a: 'During signup or anytime after, you can activate agent mode. You\'ll need an Android device for SoftPOS features. Once activated, you can accept card payments, offer cash-out services, and earn commissions on transactions.' },
-    { q: 'Is stablecoin access available to everyone?', a: 'Stablecoin features are available to Tier 3 users (both regular users and agents) who pass enhanced compliance checks. We monitor all transactions in real-time to ensure safety and regulatory adherence.' },
+    { q: 'Is stablecoin access available to everyone?', a: 'Stablecoin features are available to Tier 2/3 users (both regular users and agents) who pass enhanced compliance checks. We monitor all transactions in real-time to ensure safety and regulatory adherence.' },
     { q: 'What happens if a transaction fails?', a: 'Our system is idempotent, meaning safe retries are built-in. If a network error occurs, the transaction is either clearly failed or pending. You can check the status instantly in your history, and reversals are processed automatically within 24 hours.' },
     { q: 'How can I contact customer support?', a: 'We offer 24/7 in-app chat support for all users. Tier 2 and 3 users get priority response times. You can also reach us via email or our dedicated WhatsApp line.' }
   ]

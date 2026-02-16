@@ -7,22 +7,18 @@
       <div class="grid lg:grid-cols-2 gap-6 items-center">
         <!-- Text Content -->
         <div class="space-y-6 text-center lg:text-left max-w-6xl">
-          <div class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm font-medium text-primary backdrop-blur-sm">
-            <span class="flex h-2 w-2 rounded-full bg-green-500"></span>
-            <span class="typing-text">{{ currentText }}</span>
-          </div>
           
           <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-text via-text to-primary">
+            <span class=" bg-clip-text bg-gradient-to-r from-text via-text to-primary">
               Empowering Africa's digital economy — for 
             </span>
-            <span class="relative inline-block h-[1.2em] w-[200px] sm:w-[250px] align-bottom">
+            <span class="relative inline-block h-[1.2em] w-[400px] sm:w-[250px] align-bottom">
               <span 
                 v-for="(text, index) in content.hero.rotatingTexts" 
                 :key="text"
                 class="absolute left-0 bottom-0 w-full font-extrabold transition-opacity duration-[1500ms] ease-in-out"
                 :class="{ 'opacity-85': currentRotatingIndex === index, 'opacity-0': currentRotatingIndex !== index }"
-                style="color: rgb(99, 102, 241);"
+                style="color: #5a2399;"
               >
                 {{ text }}
               </span>
@@ -126,50 +122,11 @@ import {
 } from 'lucide-vue-next'
 
 const router = useRouter()
-const phrases = [
-  "Powering Africa's Digital Economy",
-  "Built for Everyone",
-  "Instant. Secure. Accessible."
-]
-
-const currentText = ref("")
-const currentPhraseIndex = ref(0)
-const isDeleting = ref(false)
-const typingSpeed = 100
-const deletingSpeed = 50
-const pauseBetween = 2000
 const openVideo = ref(false)
 const currentRotatingIndex = ref(0)
 
-let timer: number
+//let timer: number
 let rotatingTimer: number
-
-const typeLoop = () => {
-  const currentPhrase = phrases[currentPhraseIndex.value]
-  
-  if (!currentPhrase) return
-
-  if (isDeleting.value) {
-    currentText.value = currentPhrase.substring(0, currentText.value.length - 1)
-  } else {
-    currentText.value = currentPhrase.substring(0, currentText.value.length + 1)
-  }
-
-  let nextSpeed = typingSpeed
-
-  if (!isDeleting.value && currentText.value === currentPhrase) {
-    nextSpeed = pauseBetween
-    isDeleting.value = true
-  } else if (isDeleting.value && currentText.value === "") {
-    isDeleting.value = false
-    currentPhraseIndex.value = (currentPhraseIndex.value + 1) % phrases.length
-    nextSpeed = 500
-  } else if (isDeleting.value) {
-    nextSpeed = deletingSpeed
-  }
-
-  timer = setTimeout(typeLoop, nextSpeed) as unknown as number
-}
 
 const goToOnboarding = () => {
   router.push('/get-started')
@@ -180,12 +137,12 @@ const rotateText = () => {
 }
 
 onMounted(() => {
-  typeLoop()
+  //typeLoop()
   rotatingTimer = setInterval(rotateText, 3000) as unknown as number
 })
 
 onBeforeUnmount(() => {
-  clearTimeout(timer)
+  //clearTimeout(timer)
   clearInterval(rotatingTimer)
 })
 </script>
