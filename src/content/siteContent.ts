@@ -62,9 +62,9 @@ export const site = {
   steps: [
     { title: 'Sign Up Instantly', desc: 'Create your account in less than 2 minutes. Choose regular user or agent mode.' },
     { title: 'Verify Identity', desc: 'Complete simple KYC steps to unlock higher limits and Tier 2 status.' },
-    { title: 'Start Transacting', desc: 'Send transfers, buy digital products, or serve customers (agents).' },
+    { title: 'Start Transacting', desc: 'Access stablecoin, send transfers, buy digital products, or serve customers (agents).' },
     { title: 'Explore Features', desc: 'Access gift cards, remittance, micro-loans, and more as you grow.' },
-    { title: 'Unlock Tier 3', desc: 'Qualify for stablecoin access and maximum daily transaction caps.' }
+    { title: 'Unlock Higher Tiers', desc: 'Qualify for micro-loan access and maximum daily transaction caps.' }
   ],
   complianceNote: 'Stablecoin access is available only to approved Tier 3 users with enhanced due diligence and active monitoring.',
   modules: [
