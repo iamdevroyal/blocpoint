@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-32 pb-24 overflow-hidden">
+  <div class="pt-32 pb-12 overflow-hidden">
     <!-- Hero Section -->
-    <section class="relative py-20 lg:py-32">
+    <section class="relative py-8 lg:py-8">
       <div class="absolute inset-0 bg-hero-gradient opacity-50"></div>
       <Container class="relative z-10">
         <div class="max-w-4xl mx-auto text-center space-y-8">
@@ -14,8 +14,7 @@
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Everyone in Africa</span>
           </h1>
           <p class="text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
-            We're building a platform where anyone can send money, buy things, and manage their finances easily. 
-            Want to earn? Activate agent mode to serve customers and grow your business.
+            We're building a platform where anyone can send money, buy things, manage their finances easily and grow their business.
           </p>
         </div>
       </Container>
@@ -37,7 +36,7 @@
                 Digital payments are confusing. We're changing that.
               </p>
               <p class="text-text font-medium border-l-4 border-primary pl-4">
-                BlocPoint makes it simple. Send money instantly, buy what you need, and manage your finances—all in one app. 
+                Blocpoint makes it simple. Send money instantly, buy what you need, and manage your finances—all in one app. 
                 Want to earn? Turn on agent mode and start serving customers.
               </p>
             </div>
@@ -80,7 +79,7 @@
       <Container>
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-5xl font-bold mb-6 text-text-heading">Our Core Values</h2>
-          <p class="text-lg text-text-muted">The principles that guide every line of code we write.</p>
+          <p class="text-lg text-text-muted">The principles that guide our existence.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -191,8 +190,8 @@ const values = [
     icon: ScaleIcon
   },
   {
-    title: 'Agent Obsession',
-    desc: 'We don\'t just build for agents; we build with them. Their liquidity and profitability is our north star.',
+    title: 'User Obsession',
+    desc: 'We don\'t just build for users; we build with them. Their liquidity and profitability is our north star.',
     icon: HeartHandshakeIcon
   },
   {
@@ -205,21 +204,21 @@ const values = [
 const roadmap = [
   {
     timeline: 'Phase 1 • 2026 Q1-Q2',
-    title: 'Foundation & Fiat Rails',
-    desc: 'Establishing the core agent network with rock-solid fiat payment processing and SoftPOS technology.',
-    items: ['Instant Settlement Engine', 'SoftPOS Android App', 'Agent Dashboard V1', 'Regulatory Licenses']
-  },
-  {
-    timeline: 'Phase 2 • 2026 Q3',
-    title: 'Digital Services Expansion',
-    desc: 'Layering high-margin digital products on top of the payment rails to boost agent revenue.',
-    items: ['Gift Card Marketplace', 'Utility Bill Aggregation', 'Airtime & Data APIs', 'P2P Transfer Network']
-  },
-  {
-    timeline: 'Phase 3 • 2026 Q4',
     title: 'DeFi Integration',
     desc: 'Unlocking the power of stablecoins for cross-border liquidity and inflation-resistant savings.',
     items: ['USDC/USDT Wallets', 'Yield-bearing Savings', 'Cross-border Remittance', 'Smart Contract Escrow']
+  },
+  {
+    timeline: 'Phase 2 • 2026 Q3',
+    title: 'Foundation & Fiat Rails',
+    desc: 'Establishing the core user network with rock-solid fiat payment processing and stablecoin rails.',
+    items: ['Instant Settlement Engine', 'User App', 'User Dashboard V1', 'Regulatory Licenses']
+  },
+  {
+    timeline: 'Phase 3 • 2026 Q4',
+    title: 'Digital Services Expansion',
+    desc: 'Layering high-margin digital products on top of the payment rails to boost agent revenue.',
+    items: ['Gift Card Marketplace', 'Utility Bill Aggregation', 'Airtime & Data APIs', 'P2P Transfer Network']
   },
   {
     timeline: 'Phase 4 • 2027+',

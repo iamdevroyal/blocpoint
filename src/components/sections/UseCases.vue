@@ -6,7 +6,7 @@
 
     <Container class="relative z-10">
       <div class="text-center mb-16">
-         <h2 class="text-3xl md:text-5xl font-bold mb-6">Built for Africa’s Digital Earners</h2>
+         <h2 class="text-3xl md:text-5xl font-bold mb-6">Built for Africa’s Remittance Ecosytem</h2>
          <p class="text-lg text-neutral-400">From digital natives to neighborhood agents, we have you covered.</p>
       </div>
 

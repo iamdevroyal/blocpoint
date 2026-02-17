@@ -6,13 +6,9 @@
       <Container class="relative z-10">
         <div class="max-w-4xl mx-auto text-center space-y-4 reveal">
 
-          <p class="text-lg text-text-muted max-w-2xl mx-auto leading-relaxed">
-            Send money locally and internationally instantly, buy gift cards, subscriptions and airtime, access stablecoins, and get micro-loans. 
-            <strong class="text-text-heading">Want to serve customers?</strong> Activate agent mode for SoftPOS card acceptance, cash-out services, and commissions.
-          </p>
-          
-          <p class="text-xs text-text-muted max-w-lg mx-auto reveal">
-            Stablecoin features are available to Tier 3 users with enhanced verification.
+          <p class="text-sm text-text-muted max-w-2xl mx-auto leading-relaxed">
+            Send money instantly, access digital assets and micro-loans. 
+          <br> <strong class="text-text-heading">Want to serve customers?</strong> Activate agent mode for SoftPOS card acceptance, cash-out services, and commissions.
           </p>
         </div>
       </Container>
@@ -90,7 +86,7 @@
                 <!-- Terms -->
                 <div class="flex items-start gap-3 pt-2">
                    <input v-model="form.terms" type="checkbox" class="mt-1 w-4 h-4 rounded border-border bg-bg text-primary focus:ring-primary cursor-pointer" required />
-                   <span class="text-sm text-text-muted">I agree to the Blocpoint Terms of Service and Privacy Policy.</span>
+                   <span class="text-sm text-text-muted">I agree to the Blocpoint  <a href="/terms" class="text-purple-500 hover:underline">Terms of Service</a> and <a href="/privacy" class="text-purple-500 hover:underline">Privacy Policy</a>.</span>
                 </div>
 
                 <Button type="submit" variant="primary" class="w-full py-4 text-lg shadow-lg hover:shadow-primary/25 transition-all duration-300" :disabled="loading">

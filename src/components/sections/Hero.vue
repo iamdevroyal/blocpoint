@@ -6,11 +6,11 @@
     <Container class="relative z-10 max-w-12xl">
       <div class="grid lg:grid-cols-2 gap-6 items-center">
         <!-- Text Content -->
-        <div class="space-y-6 text-center lg:text-left max-w-6xl">
+        <div class="space-y-6 sm:text-left lg:text-left max-w-6xl">
           
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
             <span class=" bg-clip-text bg-gradient-to-r from-text via-text to-primary">
-              Empowering Africa's Remittance Economy — for 
+              Empowering Africa's Remittance Economy for 
             </span>
             <span class="relative inline-block h-[1.2em] w-[300px] sm:w-[400px] align-bottom">
               <span 
@@ -25,9 +25,9 @@
             </span>
           </h1>
           
-          <p class="text-lg sm:text-xl text-text-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p class="space-y-0 text-lg sm:text-xl text-text-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
             {{ content.hero.subheadline[0] }}
-            <span class="block mt-2 text-primary opacity-80">{{ content.hero.subheadline[1] }}</span>
+            <span class="block mt-2 text-sm text-primary opacity-80">{{ content.hero.subheadline[1] }}</span>
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">

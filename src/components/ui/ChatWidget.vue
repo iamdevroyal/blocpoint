@@ -10,10 +10,10 @@
         <div class="p-4 border-b border-border bg-primary/10 flex items-center justify-between">
           <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30">
-              <img src="/blocpoint-fav.png" alt="Blocci" class="w-5 h-5" />
+              <img src="/blocpoint-fav.png" alt="Joke" class="w-5 h-5" />
             </div>
             <div>
-              <h3 class="font-bold text-text-heading text-sm">Blocci AI</h3>
+              <h3 class="font-bold text-text-heading text-sm">Joke AI</h3>
               <p class="text-xs text-primary flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
                 Online
@@ -30,10 +30,10 @@
           <!-- Welcome Message -->
           <div class="flex gap-3">
             <div class="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center border border-primary/30 mt-1">
-              <img src="/blocpoint-fav.png" alt="Blocci" class="w-5 h-5" />
+              <img src="/blocpoint-fav.png" alt="Joke" class="w-5 h-5" />
             </div>
             <div class="bg-surface border border-border rounded-2xl rounded-tl-none p-3 text-sm text-text max-w-[85%] shadow-sm">
-              <p>Hi there! 👋 I'm Blocci. How can I help you today?</p>
+              <p>Hi there! 👋 I'm Joke. How can I help you today?</p>
             </div>
           </div>
 
@@ -41,7 +41,7 @@
           <div v-for="msg in messages" :key="msg.id" class="flex gap-3" :class="msg.sender === 'user' ? 'flex-row-reverse' : ''">
             <!-- Avatar for Bot -->
             <div v-if="msg.sender === 'bot'" class="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center border border-primary/30 mt-1">
-              <img src="/blocpoint-fav.png" alt="Blocci" class="w-5 h-5" />
+              <img src="/blocpoint-fav.png" alt="Joke" class="w-5 h-5" />
             </div>
             
             <!-- Message Bubble -->
@@ -58,7 +58,7 @@
           <!-- Typing Indicator -->
           <div v-if="isTyping" class="flex gap-3">
             <div class="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center border border-primary/30 mt-1">
-              <img src="/blocpoint-fav.png" alt="Blocci" class="w-5 h-5" />
+              <img src="/blocpoint-fav.png" alt="Joke" class="w-5 h-5" />
             </div>
             <div class="bg-surface border border-border rounded-2xl rounded-tl-none p-4 text-sm text-text max-w-[85%] shadow-sm flex items-center gap-1">
               <div class="w-2 h-2 bg-text-muted/50 rounded-full animate-bounce" style="animation-delay: 0s"></div>
@@ -117,9 +117,9 @@
       class="fixed bottom-6 right-6 z-50 group flex items-center gap-3 pr-6 pl-2 py-2 rounded-full bg-surface border border-primary/30 shadow-lg shadow-indigo-500/20 hover:border-primary hover:bg-surface/80 backdrop-blur-md transition-all duration-300"
     >
       <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 group-hover:scale-110 transition-transform duration-300">
-        <img src="/blocpoint-fav.png" alt="Blocci" class="w-6 h-6" />
+        <img src="/blocpoint-fav.png" alt="Joke" class="w-6 h-6" />
       </div>
-      <span class="font-medium text-text-heading group-hover:text-primary transition-colors">Ask Blocci</span>
+      <span class="font-medium text-text-heading group-hover:text-primary transition-colors">Ask Joke</span>
     </button>
   </div>
 </template>

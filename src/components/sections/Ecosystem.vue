@@ -7,8 +7,8 @@
         <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-green-500/10 blur-[100px] rounded-full"></div>
         
         <div class="relative z-10 text-center mb-16">
-           <h2 class="text-3xl md:text-5xl font-bold mb-4 text-text-heading">Bridging Global Remittance with Local Fiat Rails</h2>
-           <p class="text-lg text-text-muted">Everything you need to run a modern remittance business.</p>
+           <h2 class="text-3xl md:text-5xl font-bold mb-4 text-text-heading">Bridging Global Remittance With Local Rails</h2>
+           <p class="text-lg text-text-muted">Everything you need to run a modern remittance operation.</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-16 lg:gap-24 max-w-5xl mx-auto perspective-1000">

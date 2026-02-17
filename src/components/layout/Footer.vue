@@ -19,7 +19,7 @@
              </div>
           </RouterLink>
           <p class="text-sm text-text-muted max-w-sm leading-relaxed">
-            User-first financial infrastructure. Empowering the next generation of African Spenders and POS agents with AI & Blockhain powered payment rails for instant settlements, tiered compliance, and secure digital assets.
+            User-first financial infrastructure. Empowering the next generation of African Spenders and POS agents with AI & Blockchain powered payment rails for instant settlements, tiered compliance, and secure digital assets.
           </p>
           <div class="flex gap-4">
             <!-- Social Icons Placeholder -->
