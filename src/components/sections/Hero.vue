@@ -6,7 +6,7 @@
     <Container class="relative z-10 max-w-12xl">
       <div class="grid lg:grid-cols-2 gap-6 items-center">
         <!-- Text Content -->
-        <div class="space-y-6 sm:text-left lg:text-left max-w-6xl">
+        <div class="space-y-6 sm:text-left lg:text-left max-w-6xl min-w-0 w-full">
           
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
             <span class=" bg-clip-text bg-gradient-to-r from-text via-text to-primary">
@@ -42,9 +42,13 @@
             </Button>
           </div>
 
-          <div class="pt-8 border-t border-border">
-            <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-               <div v-for="chip in content.hero.trustChips" :key="chip" class="flex items-center gap-2 text-sm text-text-muted">
+          <div class="pt-8 border-t border-border overflow-hidden relative w-full max-w-full">
+            <!-- Fade masks for smooth edges -->
+            <div class="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-bg to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-bg to-transparent z-10 pointer-events-none"></div>
+            
+            <div class="flex gap-12 animate-marquee whitespace-nowrap py-1 w-max min-w-full">
+               <div v-for="(chip, index) in [...content.hero.trustChips, ...content.hero.trustChips]" :key="index" class="flex items-center gap-2 text-sm text-text-muted shrink-0">
                  <CheckCircleIcon class="w-4 h-4 text-green-500" />
                  {{ chip }}
                </div>
@@ -227,5 +231,14 @@ onBeforeUnmount(() => {
 
 .animate-sway {
   animation: sway 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
 }
 </style>
