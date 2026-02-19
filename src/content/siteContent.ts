@@ -11,7 +11,8 @@ export const site = {
       'Convert, settle, and spend across borders - with built-in tax compliance and local wallet support.',
       'Powered by institutional-grade liquidity rails across Africa'
     ],
-    trustChips: ['⚡ Instant Stablecoin Conversion', '🌍 Cross-Border Ready', '🧾 Built-In Tax Intelligence', '💳 Fiat Wallet Infrastructure', 'Security-Grade Architecture', '🚀 Agent & POS Expansion (Coming Soon)'],
+    trustChips: ['⚡ Instant Stablecoin Conversion', '🌍 Cross-Border Ready', '🧾 Built-In Tax Intelligence',
+      '💳 Fiat Wallet Infrastructure', 'Security-Grade Architecture', '🚀 Agent & POS Expansion (Coming Soon)'],
     dashboard: {
       wallet: { currency: 'NGN', balance: '₦125,400', today: '₦15,200' },
       actions: ['Transfer', 'Buy Airtime', 'Gift Cards', 'Remittance'],

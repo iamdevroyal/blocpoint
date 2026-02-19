@@ -9,7 +9,7 @@
     <ModulesGrid />
     <Security />
     <Pricing />
-    <Trusted />
+    <!-- <Trusted /> -->
     <UseCases />
     <FAQ />
     <FinalCTA />
@@ -25,7 +25,7 @@ import Steps from '../components/sections/Steps.vue'
 import ModulesGrid from '../components/sections/ModulesGrid.vue'
 import Security from '../components/sections/Security.vue'
 import Pricing from '../components/sections/Pricing.vue'
-import Trusted from '../components/sections/Trusted.vue'
+// import Trusted from '../components/sections/Trusted.vue'
 import UseCases from '../components/sections/UseCases.vue'
 import FAQ from '../components/sections/FAQ.vue'
 import FinalCTA from '../components/sections/FinalCTA.vue'
