@@ -18,74 +18,37 @@
     <section id="signup-form" class="py-4 relative">
        <div class="absolute inset-0 bg-hero-gradient opacity-20 animate-pulse-slow"></div>
        <Container class="relative z-10">
-          <div class="max-w-2xl mx-auto bg-surface border border-border rounded-[2rem] p-8 md:p-12 backdrop-blur-xl shadow-2xl reveal">
+
+         <div v-if="success" class="text-center py-12 space-y-6">
+            <div class="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+               <CheckCircleIcon class="w-10 h-10 text-green-500" />
+            </div>
+            <h3 class="text-2xl font-bold text-text-heading">Success!</h3>
+            <p class="text-text-muted">
+               Check your phone for verification otp!
+            </p>
+         </div>
+          <div v-if="!success" class="max-w-2xl mx-auto bg-surface border border-border rounded-[2rem] p-8 md:p-12 backdrop-blur-xl shadow-2xl reveal">
              <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-text-heading mb-2">Create Your Account</h2>
-                <p class="text-text-muted">Join Blocpoint in less than 2 minutes. No fees required.</p>
+                <h2 class="lg:text-3xl sm:text-lg font-bold text-text-heading mb-2">Create Your Account</h2>
              </div>
 
-             <form @submit.prevent="submitForm" class="space-y-6">
-                <!-- Name -->
+             <form  @submit.prevent="submitForm" class="space-y-6">
+                <!-- Phone -->
                 <div class="space-y-2 group">
-                   <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">Full Name</label>
-                   <input v-model="form.name" type="text" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all" placeholder="Enter your full name" required />
+                   <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">Phone Number</label>
+                   <input v-model="form.phone" type="text" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all" placeholder="080..."  />
                 </div>
 
-                <!-- Contact -->
-                <div class="grid grid-cols-2 gap-4">
-                   <div class="space-y-2 group">
-                      <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">Email Address</label>
-                      <input v-model="form.email" type="email" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all" placeholder="you@example.com" required />
-                   </div>
-                   <div class="space-y-2 group">
-                      <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">Phone Number</label>
-                      <input v-model="form.phone" type="tel" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all" placeholder="080..." required />
-                   </div>
-                </div>
-
-                <!-- User Type Selection -->
+                <!-- Password -->
                 <div class="space-y-2 group">
-                   <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">I want to use Blocpoint as:</label>
-                   <select v-model="form.userType" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all appearance-none" required>
-                      <option value="" disabled>Select user type</option>
-                      <option value="regular">Regular User (transfers, digital products, loans)</option>
-                      <option value="agent">Agent (all features + SoftPOS, cash-out, commissions)</option>
-                   </select>
-                   <p class="text-xs text-text-muted">You can activate agent mode later if you choose regular user now.</p>
-                </div>
-
-                <!-- Agent-specific fields (conditional) -->
-                <div v-if="form.userType === 'agent'" class="space-y-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
-                   <p class="text-sm font-medium text-text-heading">Agent Information</p>
-                   
-                   <div class="space-y-2 group">
-                      <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">What best describes you?</label>
-                      <select v-model="form.role" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all appearance-none" :required="form.userType === 'agent'">
-                         <option value="" disabled>Select Role</option>
-                         <option>POS Agent</option>
-                         <option>Mobile Money Agent</option>
-                         <option>Retail Shop Owner</option>
-                         <option>Super Agent / Aggregator</option>
-                         <option>Other</option>
-                      </select>
-                   </div>
-
-                   <div class="space-y-2 group">
-                      <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">Estimated Daily Volume</label>
-                      <select v-model="form.volume" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all appearance-none" :required="form.userType === 'agent'">
-                         <option value="" disabled>Select Volume</option>
-                         <option>₦0 – ₦50k</option>
-                         <option>₦50k – ₦200k</option>
-                         <option>₦200k – ₦500k</option>
-                         <option>₦500k – ₦1m</option>
-                         <option>₦1m+</option>
-                      </select>
-                   </div>
+                   <label class="text-sm font-medium text-text-heading group-focus-within:text-primary transition-colors">Password</label>
+                   <input v-model="form.password" type="text" class="w-full px-4 py-3 rounded-xl bg-bg border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none text-text transition-all" placeholder="*******"  />
                 </div>
 
                 <!-- Terms -->
                 <div class="flex items-start gap-3 pt-2">
-                   <input v-model="form.terms" type="checkbox" class="mt-1 w-4 h-4 rounded border-border bg-bg text-primary focus:ring-primary cursor-pointer" required />
+                   <input v-model="form.terms" type="checkbox" class="mt-1 w-4 h-4 rounded border-border bg-bg text-primary focus:ring-primary cursor-pointer"  />
                    <span class="text-sm text-text-muted">I agree to the Blocpoint  <a href="/terms" class="text-purple-500 hover:underline">Terms of Service</a> and <a href="/privacy" class="text-purple-500 hover:underline">Privacy Policy</a>.</span>
                 </div>
 
@@ -101,7 +64,7 @@
                 </div>
                 
                 <div class="text-center text-xs text-text-muted border-t border-border pt-4 mt-4">
-                   We'll send verification steps after you create your account.
+                   We'll send verification OTP to the phone number you provided.
                 </div>
              </form>
           </div>
@@ -120,31 +83,59 @@
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
 import Container from '../components/ui/Container.vue'
+import { CheckCircleIcon, Loader2Icon } from 'lucide-vue-next'
 import Button from '../components/ui/Button.vue'
 import confetti from 'canvas-confetti'
 import { useScrollReveal } from '../composables/useScrollReveal'
-import { 
-  Loader2Icon,
-} from 'lucide-vue-next'
+import { useToast } from 'vue-toastification'
 
 const loading = ref(false)
+const success = ref(false)
+const toast = useToast()
 
 // Initialize scroll animations
 useScrollReveal('.reveal')
 
+const emit = defineEmits(['close'])
+
 // Form Logic
 const form = reactive({
-  name: '',
-  email: '',
   phone: '',
-  userType: '',
-  role: '',
-  volume: '',
+  password: '',
   terms: false
 })
 
 const submitForm = async () => {
   loading.value = true
+
+  if (!form.phone || !form.password || !form.terms) {
+   toast.error('All inputs are required')
+   loading.value = false
+   success.value = false
+   return
+  } 
+
+  if (form.phone.length !== 11) {
+   toast.error('Phone number must be 11 digits!')
+   loading.value = false
+   success.value = false
+   return
+  } 
+
+  if (form.password.length < 8 || form.password.length > 20) {
+   toast.error('Password must be greater than 8 and less than 20 characters!')
+   loading.value = false
+   success.value = false
+   return
+  } 
+
+  if (!form.terms) {
+   toast.error('You need to accept the terms of service!')
+   loading.value = false
+   success.value = false
+   return
+  } 
+
   await new Promise(resolve => setTimeout(resolve, 2000))
   loading.value = false
   confetti({
@@ -153,7 +144,12 @@ const submitForm = async () => {
     origin: { y: 0.6 },
     colors: ['#6366f1', '#a855f7', '#ec4899', '#22c55e']
   })
-  alert('Account Created! Check your email for verification steps.')
+
+  form.password = ''
+  form.terms = false
+  form.phone = ''
+  success.value = true
+  toast.success('Check your phone for verification otp!')
 }
 
 

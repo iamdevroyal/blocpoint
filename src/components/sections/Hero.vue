@@ -49,7 +49,7 @@
             
             <div class="flex gap-12 animate-marquee whitespace-nowrap py-1 w-max min-w-full">
                <div v-for="(chip, index) in [...content.hero.trustChips, ...content.hero.trustChips]" :key="index" class="flex items-center gap-2 text-sm text-text-muted shrink-0">
-                 <CheckCircleIcon class="w-4 h-4 text-green-500" />
+                 <!-- <CheckCircleIcon class="w-4 h-4 text-green-500" /> -->
                  {{ chip }}
                </div>
             </div>
@@ -118,7 +118,7 @@ import PhoneMock from '../shared/PhoneMock.vue'
 import VideoModal from '../ui/VideoModal.vue'
 import { 
   ArrowRightIcon, 
-  CheckCircleIcon, 
+  // CheckCircleIcon, 
   BanknoteIcon, 
   ShieldCheckIcon,
   DatabaseIcon,
