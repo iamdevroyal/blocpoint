@@ -6,7 +6,7 @@ export const site = {
   },
   hero: {
     headline: 'Empowering Africa\'s digital economy — for',
-    rotatingTexts: ['Freelancers', 'Entrepreneurs', 'Spenders', 'Traders', 'Everyone'],
+    rotatingTexts: ['Freelancers', 'Entrepreneurs', 'Spenders', 'Traders', 'Agents', 'Everyone'],
     subheadline: [
       'Convert, settle, and spend across borders - with built-in tax compliance and local wallet support.',
       'Powered by institutional-grade liquidity rails across Africa'
@@ -89,8 +89,8 @@ export const site = {
   ],
   pricing: [
     { tier: 'Tier 1 — Basic', bullets: ['Email & Phone verification', 'NIP transfers', 'Limited Stablecoin access', 'Digital products', '₦500k daily limit'] },
-    { tier: 'Tier 2 — Verified', bullets: ['BVN + ID verification', 'Higher limits (₦2M)', 'Higher Stablecoin access', 'Remittance + loans', 'Agent features (optional)'] },
-    { tier: 'Tier 3 — Premium', bullets: ['Enhanced due diligence', 'Full Stablecoin access', 'Highest limits (₦5M)', 'Priority support'] }
+    { tier: 'Tier 2 — Verified', bullets: ['BVN + ID verification', 'Higher limits (₦5M)', 'Higher Stablecoin access', 'Remittance + loans', 'Agent features (optional)'] },
+    { tier: 'Tier 3 — Premium', bullets: ['Enhanced due diligence', 'Full Stablecoin access', 'Highest limits (₦10M+)', 'Priority support', 'Full Agent features availability'] }
   ],
   pricingDisclaimer: 'Fees and commissions vary by transaction type, volume, risk profile, and partner rails. Final pricing is disclosed in-app.',
   useCases: [

@@ -2,8 +2,8 @@
   <section class="py-24" id="pricing">
     <Container>
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-text-heading">Choose Your Tier</h2>
-        <p class="text-lg text-text-muted">Scale your agency business with clear, transparent levels.</p>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-text-heading">Transperent Usage Tiers</h2>
+        <p class="text-lg text-text-muted">Access payment offers based on your KYC transparent levels.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8 perspective-1000">
