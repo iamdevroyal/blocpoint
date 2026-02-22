@@ -3,7 +3,7 @@
     <Container>
       <!-- Problem Section -->
       <FeatureRow>
-        <template #badge>The Problem</template>
+        <template #badge>Before Blocpoint</template>
         <template #title>Africa's remittance users deserve better tools.</template>
         <template #description>
           High fees, slow settlements, and limited access are holding users back.
@@ -39,7 +39,7 @@
 
       <!-- Solution Section -->
       <FeatureRow reverse class="mt-24">
-        <template #badge>The Solution</template>
+        <template #badge>After Blocpoint</template>
         <template #title>A Complete Remittance Platform for Everyone</template>
         <template #description>
           Blocpoint replaces fragmented tools with a single, powerful app.
