@@ -9,7 +9,7 @@
         <div class="space-y-6 sm:text-left lg:text-left max-w-6xl min-w-0 w-full">
           
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
-            <span class=" bg-clip-text bg-gradient-to-r from-text via-text to-primary">
+            <span class="bg-clip-text bg-gradient-to-r from-text via-text to-primary">
               Empowering Africa's Remittance Ecosystem for 
             </span>
             <span class="relative inline-block h-[1.2em] w-[300px] sm:w-[400px] align-bottom">
@@ -37,8 +37,17 @@
                 <ArrowRightIcon class="w-4 h-4" />
               </template>
             </Button>
-            <Button variant="secondary" @click="openVideo=true">
+            <Button variant="ghost" class="shadow-xl shadow-indigo-500/20"  @click="gotoWaitlist">
+              Join Our Waitlist
+              <template #icon>
+                <PlusCircleIcon class="w-4 h-4" />
+              </template>
+            </Button>
+            <Button variant="secondary" class="shadow-xl shadow-indigo-500/20"  @click="openVideo=true">
               View Demo
+              <template #icon>
+                <EyeIcon class="w-4 h-4" />
+              </template>
             </Button>
           </div>
 
@@ -122,7 +131,9 @@ import {
   BanknoteIcon, 
   ShieldCheckIcon,
   DatabaseIcon,
-  TrendingUpIcon
+  TrendingUpIcon,
+  EyeIcon,
+  PlusCircleIcon
 } from 'lucide-vue-next'
 
 const router = useRouter()
@@ -134,6 +145,10 @@ let rotatingTimer: number
 
 const goToOnboarding = () => {
   router.push('/get-started')
+}
+
+const gotoWaitlist = () => {
+  router.push('/join-waitlist')
 }
 
 const rotateText = () => {

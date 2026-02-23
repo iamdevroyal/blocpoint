@@ -5,6 +5,7 @@ import Compliance from '../views/Compliance.vue'
 import Privacy from '../views/Privacy.vue'
 import Terms from '../views/Terms.vue'
 import GetStarted from '../views/GetStarted.vue'
+import JoinWaitlist from '../views/JoinWaitlist.vue'
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -15,6 +16,8 @@ export const router = createRouter({
     { path: '/privacy', name: 'privacy', component: Privacy, meta: { title: 'Privacy Policy — Blocpoint', description: 'Data collection, usage, retention, and rights.' } },
     { path: '/terms', name: 'terms', component: Terms, meta: { title: 'Terms of Service — Blocpoint', description: 'Eligibility, acceptable use, fees, compliance obligations, and liability.' } },
     { path: '/get-started', name: 'get-started', component: GetStarted, meta: { title: 'Get Started — Blocpoint', description: 'Join Blocpoint for instant transfers, digital products, and more. Activate agent mode for SoftPOS and commissions.' } },
+    { path: '/join-waitlist', name: 'join-waitlist', component: JoinWaitlist, meta: { title: 'Join Our Waitlist — Blocpoint', description: 'Join Blocpoint waitlist to be notified when our app launches |  For instant transfers, digital products, and more. Activate agent mode for SoftPOS and commissions.' } },
+    
     // Legacy redirect
     { path: '/agent-onboarding', redirect: '/get-started' }
   ],
