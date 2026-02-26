@@ -47,7 +47,7 @@
         </div>
       </div>
     </Container>
-    <div v-if="mobileOpen" class="md:hidden mt-2">
+    <div v-if="mobileOpen" class="md:hidden mt-2 pointer-events-auto">
       <Container>
         <div class="glass noise gradient-border rounded-2xl p-4">
           <div class="grid gap-3 text-sm">
