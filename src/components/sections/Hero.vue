@@ -68,7 +68,7 @@
         <!-- Visual Content -->
         <div class="relative flex justify-center max-w-full lg:max-w-4xl lg:justify-end perspective-1000 mt-12 lg:mt-0 transform-style-3d">
           <div class="relative z-10 transform scale-75 sm:scale-100 transition-transform duration-700 hover:rotate-y-6 hover:rotate-x-6 group transform-style-3d">
-            <PhoneMock class="transform-style-3d animate-sway" />
+            <img src="/app-mock.png" alt="BlocPoint App" class="w-full max-w-[320px] sm:max-w-md h-auto object-contain transform-style-3d animate-sway relative z-10" />
             
             <!-- Orbit System -->
             <div class="absolute inset-0 pointer-events-none transform-style-3d">
