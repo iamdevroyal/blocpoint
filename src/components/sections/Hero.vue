@@ -132,7 +132,7 @@ import {
   ShieldCheckIcon,
   DatabaseIcon,
   TrendingUpIcon,
-  EyeIcon,
+  // EyeIcon,
   PlusCircleIcon
 } from 'lucide-vue-next'
 
