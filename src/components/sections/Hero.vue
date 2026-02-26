@@ -144,7 +144,7 @@ const currentRotatingIndex = ref(0)
 let rotatingTimer: number
 
 const goToOnboarding = () => {
-  router.push('https://blocpoint-web.vercel.app')
+  window.location.href = 'https://blocpoint-web.vercel.app'
 }
 
 const gotoWaitlist = () => {
