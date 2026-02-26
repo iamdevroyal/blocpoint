@@ -78,6 +78,7 @@ import Button from '../components/ui/Button.vue'
 import confetti from 'canvas-confetti'
 import { useScrollReveal } from '../composables/useScrollReveal'
 import { useToast } from 'vue-toastification'
+import api from '../api/axios'
 
 const loading = ref(false)
 const success = ref(false)
@@ -90,32 +91,41 @@ const emit = defineEmits(['close'])
 
 // Form Logic
 const form = reactive({
-  email: ''
+  email: '',
+  full_name: '',
+  platform: 'web',
+  role: 'user'
 })
 
 const submitForm = async () => {
   loading.value = true
 
   if (!form.email) {
-   toast.error('All inputs are required')
-   loading.value = false
-   success.value = false
-   return
+    toast.error('Email is required')
+    loading.value = false
+    return
   } 
- 
 
-  await new Promise(resolve => setTimeout(resolve, 2000))
-  loading.value = false
-  confetti({
-    particleCount: 150,
-    spread: 100,
-    origin: { y: 0.6 },
-    colors: ['#6366f1', '#a855f7', '#ec4899', '#22c55e']
-  })
+  try {
+    const response = await api.post('/waitlist/join', form)
+    
+    loading.value = false
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.6 },
+      colors: ['#6366f1', '#a855f7', '#ec4899', '#22c55e']
+    })
 
-  form.email = ''
-  success.value = true
-  toast.success('A confirmation email was sent to your email!')
+    form.email = ''
+    form.full_name = ''
+    success.value = true
+    toast.success(response.data.message || 'You have joined the waitlist!')
+  } catch (error: any) {
+    loading.value = false
+    const message = error.response?.data?.message || error.response?.data?.error || 'Something went wrong. Please try again.'
+    toast.error(message)
+  }
 }
 
 

@@ -43,12 +43,12 @@
                 <PlusCircleIcon class="w-4 h-4" />
               </template>
             </Button>
-            <Button variant="secondary" class="shadow-xl shadow-indigo-500/20"  @click="openVideo=true">
+            <!-- <Button variant="secondary" class="shadow-xl shadow-indigo-500/20"  @click="openVideo=true">
               View Demo
               <template #icon>
                 <EyeIcon class="w-4 h-4" />
               </template>
-            </Button>
+            </Button> -->
           </div>
 
           <div class="pt-8 border-t border-border overflow-hidden relative w-full max-w-full">
@@ -144,7 +144,7 @@ const currentRotatingIndex = ref(0)
 let rotatingTimer: number
 
 const goToOnboarding = () => {
-  router.push('/get-started')
+  router.push('https://blocpoint-web.vercel.app')
 }
 
 const gotoWaitlist = () => {
