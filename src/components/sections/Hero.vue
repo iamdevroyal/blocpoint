@@ -123,7 +123,7 @@ import { site as content } from '../../content/siteContent'
 import Container from '../ui/Container.vue'
 import Button from '../ui/Button.vue'
 import ConfettiLayer from './ConfettiLayer.vue'
-import PhoneMock from '../shared/PhoneMock.vue'
+// import PhoneMock from '../shared/PhoneMock.vue'
 import VideoModal from '../ui/VideoModal.vue'
 import { 
   ArrowRightIcon, 
