@@ -45,6 +45,6 @@ const openVideo = ref(false)
 const openJoin = ref(false)
 
 const goToOnboarding = () => {
-  window.location.href = 'https://blocpoint-web.vercel.app'
+  window.location.href = 'https://app.blocpoint.africa'
 }
 </script>

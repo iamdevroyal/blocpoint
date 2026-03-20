@@ -59,7 +59,7 @@ import { CheckCircleIcon, UserIcon, ShieldIcon, CrownIcon } from 'lucide-vue-nex
 const getIcon = (i: number) => [UserIcon, ShieldIcon, CrownIcon][i]
 
 const goToOnboarding = () => {
-  window.location.href = 'https://blocpoint-web.vercel.app'
+  window.location.href = 'https://app.blocpoint.africa'
 }
 </script>
 
