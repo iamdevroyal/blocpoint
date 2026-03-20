@@ -15,7 +15,7 @@
              Start with fiat rails and unlock digital assets as you grow.
            </p>
            <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-             <Button variant="glow" class="px-12 py-4 text-lg" @click="openJoin=true">
+             <Button variant="glow" class="px-12 py-4 text-lg" @click="goToOnboarding">
                Get Started
                <template #icon><ArrowRightIcon class="w-5 h-5" /></template>
              </Button>
@@ -43,4 +43,8 @@ import { ArrowRightIcon } from 'lucide-vue-next'
 
 const openVideo = ref(false)
 const openJoin = ref(false)
+
+const goToOnboarding = () => {
+  window.location.href = 'https://blocpoint-web.vercel.app'
+}
 </script>

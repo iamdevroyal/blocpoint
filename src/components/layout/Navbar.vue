@@ -31,7 +31,7 @@
               <svg v-else xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             </button>
             <Button variant="ghost" @click="emit('open-demo')">View Demo</Button>
-            <Button variant="primary" @click="emit('open-join')">Get Started</Button>
+            <Button variant="primary" @click="goToOnboarding">Get Started</Button>
           </div>
           
           <!-- Mobile Controls -->
@@ -59,7 +59,7 @@
             <RouterLink to="/compliance" @click="mobileOpen=false">Compliance</RouterLink>
             <div class="flex gap-2 pt-2">
               <Button class="w-full" variant="ghost" @click="emit('open-demo'); mobileOpen=false">View Demo</Button>
-              <Button class="w-full" variant="primary" @click="emit('open-join'); mobileOpen=false">Get Started</Button>
+              <Button class="w-full" variant="primary" @click="goToOnboarding">Get Started</Button>
             </div>
           </div>
         </div>
@@ -87,6 +87,11 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
 })
+
+const goToOnboarding = () => {
+  window.location.href = 'https://blocpoint-web.vercel.app'
+}
+
 const { theme, toggle } = useTheme()
 const { activeId } = useScrollSpy(['product','modules','how','security','pricing','faq'])
 const linkClass = (id: string) => computed(() => (activeId.value === id ? 'text-text font-semibold' : 'hover:text-text')).value

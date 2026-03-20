@@ -50,18 +50,16 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router'
 import { site as content } from '../../content/siteContent'
 import Container from '../ui/Container.vue'
 import BentoCard from '../ui/BentoCard.vue'
 import Button from '../ui/Button.vue'
 import { CheckCircleIcon, UserIcon, ShieldIcon, CrownIcon } from 'lucide-vue-next'
 
-const router = useRouter()
 const getIcon = (i: number) => [UserIcon, ShieldIcon, CrownIcon][i]
 
 const goToOnboarding = () => {
-  router.push('/get-started')
+  window.location.href = 'https://blocpoint-web.vercel.app'
 }
 </script>
 
